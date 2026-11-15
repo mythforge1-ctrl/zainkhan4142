@@ -1,0 +1,57 @@
+[
+ {
+  "t": 0.767,
+  "name": "drip_small",
+  "gain": 0
+ },
+ {
+  "t": 8.667,
+  "name": "axe_chop",
+  "gain": 0
+ },
+ {
+  "t": 10.033,
+  "name": "chicken_squawk",
+  "gain": 0
+ },
+ {
+  "t": 21.367,
+  "name": "laugh_short",
+  "gain": 0
+ },
+ {
+  "t": 24.8,
+  "name": "drip_small",
+  "gain": 0
+ },
+ {
+  "t": 30.6,
+  "name": "lab_hum",
+  "gain": 0
+ },
+ {
+  "t": 34.967,
+  "name": "carnival_sting",
+  "gain": 0
+ },
+ {
+  "t": 36.967,
+  "name": "coin_ding",
+  "gain": 0
+ },
+ {
+  "t": 41.167,
+  "name": "whoosh_soft",
+  "gain": 0
+ },
+ {
+  "t": 58.333,
+  "name": "crowd_cheer",
+  "gain": 0
+ },
+ {
+  "t": 58.8,
+  "name": "drip_small",
+  "gain": 0
+ }
+]

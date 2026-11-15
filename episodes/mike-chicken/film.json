@@ -1,0 +1,1890 @@
+{
+ "title": "The Chicken That Skipped Dinner",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "words": "voice/words.json",
+ "tween": {
+  "frames": 7,
+  "ease": "out",
+  "walk_frames": 8,
+  "face_frames": 8
+ },
+ "caption_scale": 0.5,
+ "auto_view": true,
+ "puppet_pkg": [
+  "cast",
+  "../../templates/vector2d_characters/code"
+ ],
+ "camera_idea": {
+  "name": "Dinner or not",
+  "why": "The farmer, the neighbour and the whole town keep treating Mike as dinner, so the camera sits at Mike's eye level and keeps drifting up toward the people who look down at him, then finds him the same size as them at the party.",
+  "signature": "On the last line the camera drops from the bunting back to the farmer's eyedropper on frame 0, so the film loops on the same drip."
+ },
+ "cast": {
+  "farmer": {
+   "puppet": "form:dad",
+   "height": 1.7,
+   "heads_tall": 3.0
+  },
+  "mike": {
+   "puppet": "cast:mike",
+   "height": 0.55,
+   "heads_tall": 1.7
+  },
+  "neighbour": {
+   "puppet": "cast:fishgramps",
+   "height": 1.7,
+   "heads_tall": 3.0
+  },
+  "sci1": {
+   "puppet": "cast:scientist",
+   "height": 1.65,
+   "heads_tall": 2.9
+  },
+  "sci2": {
+   "puppet": "cast:doctor",
+   "height": 1.7,
+   "heads_tall": 2.9
+  },
+  "showman": {
+   "puppet": "form:chad",
+   "height": 1.8,
+   "heads_tall": 3.0
+  },
+  "lady": {
+   "puppet": "form:lady",
+   "height": 1.6,
+   "heads_tall": 2.8,
+   "walk_speed": 1.3
+  }
+ },
+ "places": {
+  "yard": {
+   "set": "farmyard",
+   "light": "golden",
+   "backdrop": 9
+  },
+  "lab": {
+   "set": "lab",
+   "light": "interior",
+   "backdrop": 6
+  },
+  "tent": {
+   "set": "tent",
+   "light": "interior",
+   "backdrop": 6
+  },
+  "mind": {
+   "set": "mind",
+   "light": "interior",
+   "backdrop": 7
+  },
+  "party": {
+   "set": "farmyard",
+   "light": "day",
+   "backdrop": 9
+  }
+ },
+ "props": {
+  "eyedropper": {
+   "held_by": "farmer"
+  },
+  "axe": {
+   "held_by": "farmer"
+  },
+  "quarter": {
+   "held_by": "showman"
+  },
+  "clipboard": {
+   "held_by": "sci1"
+  },
+  "block": {
+   "pos": [
+    -1.0,
+    0.7,
+    0
+   ],
+   "h": 0.5,
+   "kind": "chopping block with an axe mark (set)"
+  },
+  "barrel": {
+   "pos": [
+    1.7,
+    -0.2,
+    0
+   ],
+   "h": 0.85,
+   "kind": "feed barrel Mike stands on, so his head clears the caption band (set)"
+  },
+  "fence": {
+   "pos": [
+    0,
+    1.9,
+    0
+   ],
+   "h": 1.1,
+   "kind": "rail fence along y=1.9 (set)"
+  },
+  "sign": {
+   "pos": [
+    7,
+    3,
+    2.2
+   ],
+   "h": 1.2,
+   "kind": "sideshow sign 'LIVE HEADLESS CHICKEN' (set)"
+  },
+  "barn": {
+   "pos": [
+    -6,
+    3,
+    2.2
+   ],
+   "h": 5,
+   "kind": "red barn with a windmill behind it (set)"
+  },
+  "bench": {
+   "pos": [
+    -5,
+    2,
+    1.0
+   ],
+   "h": 1.5,
+   "kind": "lab bench with glassware and a microscope (set)"
+  },
+  "brain": {
+   "pos": [
+    -5,
+    2,
+    1.5
+   ],
+   "h": 2.0,
+   "kind": "giant cartoon brain and spine model (the 'You see' analogy, set)"
+  },
+  "bunting": {
+   "pos": [
+    -5,
+    3,
+    3.0
+   ],
+   "h": 1.2,
+   "kind": "party bunting across the yard (set)"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "yard",
+   "stations": [
+    {
+     "pos": [
+      0.85,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.85,
+      0.0,
+      1.36
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "W",
+     "shows": [
+      "eyedropper",
+      "mike"
+     ],
+     "hold": 0.0,
+     "at": 0
+    },
+    {
+     "pos": [
+      1.7,
+      -1.4,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.29
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "M",
+     "at": [
+      "head",
+      1,
+      -4
+     ],
+     "shows": [
+      "mike"
+     ],
+     "word": "head",
+     "hold": 0.6
+    },
+    {
+     "pos": [
+      -0.5,
+      -6.0,
+      1.3
+     ],
+     "aim": [
+      -6.0,
+      3.0,
+      2.2
+     ],
+     "shows": [
+      "barn"
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "P",
+     "drift": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "drift_aim": 0.0,
+     "at": [
+      "yard",
+      1,
+      -4
+     ],
+     "hold": 0.8,
+     "travel": 2.0
+    },
+    {
+     "pos": [
+      0.0,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.0,
+      0.0,
+      1.36
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "W",
+     "at": [
+      "axe",
+      1,
+      -4
+     ],
+     "shows": [
+      "axe"
+     ],
+     "word": "axe",
+     "hold": 0.5,
+     "travel": 1.8
+    },
+    {
+     "pos": [
+      1.7,
+      -1.8,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.279
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "W",
+     "at": [
+      "peck",
+      1,
+      -4
+     ],
+     "shows": [
+      "mike"
+     ],
+     "word": "peck",
+     "hold": 0.5,
+     "travel": 5.0,
+     "via": [
+      [
+       -1.4,
+       -3.6,
+       1.5
+      ],
+      [
+       0.6,
+       -4.2,
+       1.9
+      ]
+     ]
+    },
+    {
+     "pos": [
+      0.25,
+      -2.0,
+      1.0
+     ],
+     "aim": [
+      0.0,
+      0.0,
+      1.2
+     ],
+     "lens": 35,
+     "subject": "farmer",
+     "framing": "O",
+     "shows": [
+      "eyedropper"
+     ],
+     "at": [
+      "eyedropper",
+      1,
+      -4
+     ],
+     "word": "eyedropper",
+     "hold": 0.8,
+     "travel": 2.5
+    },
+    {
+     "pos": [
+      2.1,
+      -0.2,
+      1.3
+     ],
+     "aim": [
+      2.1,
+      1.7,
+      1.53
+     ],
+     "lens": 24,
+     "subject": "neighbour",
+     "framing": "C",
+     "at": [
+      "face",
+      1,
+      -4
+     ],
+     "shows": [
+      "fence"
+     ],
+     "word": "face",
+     "hold": 0.9,
+     "travel": 3.0
+    },
+    {
+     "pos": [
+      0.0,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.0,
+      0.0,
+      1.36
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "W",
+     "at": [
+      "nothing",
+      3,
+      -4
+     ],
+     "shows": [
+      "eyedropper"
+     ],
+     "word": "nothing",
+     "hold": 0.5,
+     "travel": 0.7
+    },
+    {
+     "pos": [
+      1.7,
+      -1.4,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.29
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "M",
+     "at": [
+      "drop",
+      1,
+      -4
+     ],
+     "shows": [
+      "eyedropper",
+      "mike"
+     ],
+     "word": "drop",
+     "hold": 0.8,
+     "travel": 0.7
+    },
+    {
+     "pos": [
+      1.3,
+      -1.8,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.279
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "W",
+     "at": [
+      "strutting",
+      1,
+      -4
+     ],
+     "shows": [
+      "mike"
+     ],
+     "word": "strutting",
+     "hold": 0.5,
+     "travel": 1.0
+    },
+    {
+     "pos": [
+      1.7,
+      -1.4,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.29
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "M",
+     "at": [
+      "crow",
+      1,
+      -4
+     ],
+     "shows": [
+      "mike"
+     ],
+     "word": "crow",
+     "hold": 0.6,
+     "travel": 0.7
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "place": "lab",
+   "stations": [
+    {
+     "pos": [
+      0.5,
+      -5.0,
+      1.4
+     ],
+     "aim": [
+      -5.0,
+      2.0,
+      1.6
+     ],
+     "shows": [
+      "bench"
+     ],
+     "lens": 24,
+     "subject": "sci1",
+     "framing": "P",
+     "drift": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "drift_aim": 0.0,
+     "at": [
+      "then",
+      1
+     ],
+     "hold": 0.6
+    },
+    {
+     "pos": [
+      -0.15,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      -0.55,
+      0.0,
+      1.32
+     ],
+     "lens": 24,
+     "subject": "sci1",
+     "framing": "W",
+     "at": [
+      "poke",
+      1,
+      -4
+     ],
+     "shows": [
+      "clipboard",
+      "mike"
+     ],
+     "word": "poke",
+     "hold": 0.6,
+     "travel": 1.8
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "place": "tent",
+   "stations": [
+    {
+     "pos": [
+      -0.6,
+      -5.0,
+      1.2
+     ],
+     "aim": [
+      7.0,
+      3.0,
+      2.2
+     ],
+     "shows": [
+      "sign"
+     ],
+     "lens": 24,
+     "subject": "showman",
+     "framing": "P",
+     "drift": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "drift_aim": 0.0,
+     "at": [
+      "then",
+      2
+     ],
+     "hold": 0.5
+    },
+    {
+     "pos": [
+      -0.2,
+      -2.1,
+      1.1
+     ],
+     "aim": [
+      -0.4,
+      0.0,
+      1.3
+     ],
+     "lens": 35,
+     "subject": "showman",
+     "framing": "O",
+     "shows": [
+      "quarter"
+     ],
+     "at": [
+      "quarter",
+      1,
+      -4
+     ],
+     "word": "quarter",
+     "hold": 0.7,
+     "travel": 2.5
+    },
+    {
+     "pos": [
+      -2.1,
+      -2.3,
+      1.15
+     ],
+     "aim": [
+      -2.1,
+      -0.2,
+      1.428
+     ],
+     "lens": 24,
+     "subject": "neighbour",
+     "framing": "M",
+     "at": [
+      "laughing",
+      1,
+      -4
+     ],
+     "shows": [],
+     "word": "laughing",
+     "hold": 0.8,
+     "travel": 2.5
+    }
+   ]
+  },
+  {
+   "id": "t4",
+   "place": "mind",
+   "stations": [
+    {
+     "pos": [
+      0.0,
+      -6.2,
+      1.5
+     ],
+     "aim": [
+      -5.0,
+      2.0,
+      1.5
+     ],
+     "shows": [
+      "brain"
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "P",
+     "drift": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "drift_aim": 0.0,
+     "at": [
+      "you",
+      1
+     ],
+     "hold": 1.3
+    },
+    {
+     "pos": [
+      0.5,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.0,
+      0.0,
+      1.28
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "W",
+     "at": [
+      "heartbeat",
+      1,
+      -4
+     ],
+     "shows": [
+      "lady"
+     ],
+     "word": "heartbeat",
+     "hold": 0.5,
+     "travel": 3.0
+    },
+    {
+     "pos": [
+      -0.1,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.4,
+      0.0,
+      1.28
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "W",
+     "at": [
+      "legs",
+      1,
+      -4
+     ],
+     "shows": [
+      "lady"
+     ],
+     "word": "legs",
+     "hold": 0.5,
+     "travel": 0.8
+    },
+    {
+     "pos": [
+      0.4,
+      -2.1,
+      1.15
+     ],
+     "aim": [
+      0.4,
+      0.0,
+      1.344
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "M",
+     "at": [
+      "thinking",
+      1,
+      -4
+     ],
+     "shows": [
+      "lady"
+     ],
+     "word": "thinking",
+     "hold": 0.6,
+     "travel": 0.8
+    }
+   ]
+  },
+  {
+   "id": "t5",
+   "place": "party",
+   "stations": [
+    {
+     "pos": [
+      1.7,
+      -1.8,
+      1.19
+     ],
+     "aim": [
+      1.7,
+      -0.2,
+      1.279
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "W",
+     "at": [
+      "so",
+      3
+     ],
+     "shows": [
+      "mike"
+     ],
+     "word": "so",
+     "hold": 0.6
+    },
+    {
+     "pos": [
+      0.0,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.0,
+      0.0,
+      1.36
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "W",
+     "at": [
+      "farmer",
+      4,
+      -4
+     ],
+     "shows": [
+      "eyedropper"
+     ],
+     "word": "farmer",
+     "hold": 0.5,
+     "travel": 1.0
+    },
+    {
+     "pos": [
+      0.0,
+      -5.0,
+      1.2
+     ],
+     "aim": [
+      -5.0,
+      3.0,
+      3.0
+     ],
+     "shows": [
+      "bunting"
+     ],
+     "lens": 24,
+     "subject": "mike",
+     "framing": "P",
+     "drift": [
+      0.06,
+      0.0,
+      0.0
+     ],
+     "drift_aim": 0.0,
+     "at": [
+      "town",
+      1,
+      -4
+     ],
+     "word": "town",
+     "hold": 0.5,
+     "travel": 2.2
+    },
+    {
+     "pos": [
+      0.85,
+      -3.0,
+      0.85
+     ],
+     "aim": [
+      0.85,
+      0.0,
+      1.36
+     ],
+     "lens": 24,
+     "subject": "farmer",
+     "framing": "W",
+     "shows": [
+      "eyedropper",
+      "mike"
+     ],
+     "at": [
+      "year",
+      1
+     ],
+     "loop": true,
+     "travel": 1.8
+    }
+   ]
+  }
+ ],
+ "kicks": [
+  {
+   "at": [
+    "axe",
+    1
+   ],
+   "amp": 2.0
+  }
+ ],
+ "acts": [
+  {
+   "who": "farmer",
+   "at": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "hold_watch",
+   "face": "strain",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "mike",
+   "at": 0,
+   "pos": [
+    1.7,
+    -0.2,
+    0.85
+   ],
+   "view": "34",
+   "dir": -1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "neighbour",
+   "at": 0,
+   "pos": [
+    2.1,
+    1.7,
+    0
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "stand",
+   "face": "smug"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "yard",
+    1
+   ],
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "swings",
+    1
+   ],
+   "pose": "point_up",
+   "face": "evil",
+   "prop": "axe",
+   "hand": "R"
+  },
+  {
+   "who": "mike",
+   "at": [
+    "stands",
+    1
+   ],
+   "face": "starstruck",
+   "pose": "clap"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "next",
+    1
+   ],
+   "face": "confused",
+   "pose": "stand"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "sighs",
+    1
+   ],
+   "face": "deadInside",
+   "pose": "shrug"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "eyedropper",
+    1
+   ],
+   "face": "cool",
+   "pose": "hold_watch",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "leans",
+    1
+   ],
+   "face": "smug",
+   "pose": "point_out"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "face",
+    1
+   ],
+   "face": "hysterical",
+   "pose": "hand_mouth",
+   "punch": true,
+   "punch_s": 0.5
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "says",
+    1
+   ],
+   "face": "cool",
+   "pose": "hold_watch",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "squeezes",
+    1
+   ],
+   "face": "proud",
+   "pose": "press_watch",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "week",
+    1
+   ],
+   "face": "sus",
+   "pose": "stand"
+  },
+  {
+   "who": "mike",
+   "at": [
+    "strutting",
+    1
+   ],
+   "face": "standard",
+   "pose": "stand"
+  },
+  {
+   "who": "sci1",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "pos": [
+    -0.55,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "hold_watch",
+   "face": "judging",
+   "prop": "clipboard",
+   "hand": "R"
+  },
+  {
+   "who": "sci2",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "pos": [
+    1.3,
+    0.2,
+    0
+   ],
+   "view": "34",
+   "dir": -1,
+   "pose": "hand_mouth",
+   "face": "confused"
+  },
+  {
+   "who": "mike",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "pos": [
+    0.45,
+    0.05,
+    0.9
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "sci1",
+   "at": [
+    "poke",
+    1
+   ],
+   "face": "sus",
+   "pose": "point_out"
+  },
+  {
+   "who": "sci1",
+   "at": [
+    "find",
+    2
+   ],
+   "face": "deadInside",
+   "pose": "shrug"
+  },
+  {
+   "who": "showman",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "pos": [
+    -0.4,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "point_out",
+   "face": "delight",
+   "prop": "quarter",
+   "hand": "R"
+  },
+  {
+   "who": "mike",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "pos": [
+    0.8,
+    0.1,
+    1.0
+   ],
+   "view": "34",
+   "dir": -1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "pos": [
+    -2.1,
+    -0.2,
+    0
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "stand",
+   "face": "smug"
+  },
+  {
+   "who": "showman",
+   "at": [
+    "quarter",
+    1
+   ],
+   "pose": "hold_up",
+   "face": "evil",
+   "prop": "quarter",
+   "hand": "R"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "keeps",
+    1
+   ],
+   "face": "deadInside",
+   "pose": "stand"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "laughing",
+    1
+   ],
+   "face": "terrified",
+   "pose": "stand",
+   "punch": true,
+   "punch_s": 0.5
+  },
+  {
+   "who": "lady",
+   "at": [
+    "you",
+    1,
+    -5
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "confused"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "missed",
+    1
+   ],
+   "face": "sus",
+   "pose": "finger_up"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "heartbeat",
+    1
+   ],
+   "face": "judging",
+   "pose": "stand"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "legs",
+    1
+   ],
+   "pos": [
+    0.4,
+    0,
+    0
+   ],
+   "pose": "stand",
+   "face": "cool"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "thinking",
+    1
+   ],
+   "pos": [
+    0.4,
+    0,
+    0
+   ],
+   "face": "starstruck",
+   "pose": "finger_up"
+  },
+  {
+   "who": "mike",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "pos": [
+    1.7,
+    -0.2,
+    0.85
+   ],
+   "view": "34",
+   "dir": -1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "proud"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "pos": [
+    2.1,
+    1.7,
+    0
+   ],
+   "view": "front",
+   "dir": -1,
+   "pose": "clap",
+   "face": "happyCry"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "feeds",
+    1
+   ],
+   "face": "delight",
+   "pose": "hold_watch",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "town",
+    1
+   ],
+   "face": "happyCry",
+   "pose": "clap"
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "year",
+    1
+   ],
+   "face": "strain",
+   "pose": "hold_watch",
+   "prop": "eyedropper",
+   "hand": "R"
+  },
+  {
+   "who": "sci1",
+   "at": 0,
+   "pos": [
+    -0.55,
+    0,
+    0
+   ],
+   "visible": false
+  },
+  {
+   "who": "sci2",
+   "at": 0,
+   "pos": [
+    1.3,
+    0.2,
+    0
+   ],
+   "visible": false
+  },
+  {
+   "who": "showman",
+   "at": 0,
+   "pos": [
+    -0.4,
+    0,
+    0
+   ],
+   "visible": false
+  },
+  {
+   "who": "lady",
+   "at": 0,
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "visible": false
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "sci1",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "sci2",
+   "at": [
+    "then",
+    1,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "sci1",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "sci2",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "showman",
+   "at": [
+    "then",
+    2,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "mike",
+   "at": [
+    "you",
+    1,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "you",
+    1,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "showman",
+   "at": [
+    "you",
+    1,
+    -5
+   ],
+   "visible": false
+  },
+  {
+   "who": "lady",
+   "at": [
+    "you",
+    1,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "farmer",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "mike",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "neighbour",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "visible": true
+  },
+  {
+   "who": "lady",
+   "at": [
+    "so",
+    3,
+    -5
+   ],
+   "visible": false
+  }
+ ],
+ "sentences": [
+  {
+   "text": "A farmer drips milk down his chicken's neck, because the chicken has no head.",
+   "words": [
+    0,
+    13
+   ],
+   "subject": "farmer"
+  },
+  {
+   "text": "It's 1945 in Colorado, and he has a whole yard of chickens to get ready for dinner.",
+   "words": [
+    14,
+    30
+   ],
+   "subject": "farmer"
+  },
+  {
+   "text": "So he swings the axe, and one rooster just stands up and walks away like nothing happened.",
+   "words": [
+    31,
+    47
+   ],
+   "subject": "farmer",
+   "nouns": [
+    {
+     "word": "axe",
+     "n": 1,
+     "show": "axe"
+    }
+   ]
+  },
+  {
+   "text": "The next morning he's still in the yard, trying to peck at corn with nothing to peck with,",
+   "words": [
+    48,
+    65
+   ],
+   "subject": "mike"
+  },
+  {
+   "text": "so the farmer sighs and goes to find an eyedropper.",
+   "words": [
+    66,
+    75
+   ],
+   "subject": "farmer",
+   "nouns": [
+    {
+     "word": "eyedropper",
+     "n": 1,
+     "show": "eyedropper"
+    }
+   ]
+  },
+  {
+   "text": "A neighbour leans on the fence and goes, \"You're feeding a chicken with no face? He's still dinner.\"",
+   "words": [
+    76,
+    93
+   ],
+   "subject": "neighbour"
+  },
+  {
+   "text": "The farmer says nothing, and he squeezes in another drop of milk and water.",
+   "words": [
+    94,
+    107
+   ],
+   "subject": "farmer"
+  },
+  {
+   "text": "A week later the rooster is strutting around the yard, trying to crow with nothing to crow with.",
+   "words": [
+    108,
+    125
+   ],
+   "subject": "mike"
+  },
+  {
+   "text": "Then scientists from a university drive out, and they poke him all over, and they can't find a thing wrong.",
+   "words": [
+    126,
+    145
+   ],
+   "subject": "sci1"
+  },
+  {
+   "text": "Then a showman takes him on tour, and people pay a quarter each just to look at him.",
+   "words": [
+    146,
+    163
+   ],
+   "subject": "showman",
+   "nouns": [
+    {
+     "word": "quarter",
+     "n": 1,
+     "show": "quarter"
+    }
+   ]
+  },
+  {
+   "text": "The neighbour keeps leaning on the fence, but he's not laughing anymore.",
+   "words": [
+    164,
+    175
+   ],
+   "subject": "neighbour"
+  },
+  {
+   "text": "You see, the axe missed one big vein, and it left the bottom of the brain.",
+   "words": [
+    176,
+    191
+   ],
+   "subject": "lady"
+  },
+  {
+   "text": "That's the part that runs the heartbeat and the breathing,",
+   "words": [
+    192,
+    201
+   ],
+   "subject": "lady"
+  },
+  {
+   "text": "like how your legs keep walking while your head is busy thinking about something else.",
+   "words": [
+    202,
+    216
+   ],
+   "subject": "lady"
+  },
+  {
+   "text": "So the rooster everyone called Mike lives another eighteen months,",
+   "words": [
+    217,
+    226
+   ],
+   "subject": "mike"
+  },
+  {
+   "text": "and the farmer feeds him with the eyedropper every single day.",
+   "words": [
+    227,
+    237
+   ],
+   "subject": "farmer"
+  },
+  {
+   "text": "And now the town that was supposed to eat him throws him a party every year.",
+   "words": [
+    238,
+    253
+   ],
+   "subject": "mike"
+  }
+ ],
+ "fx": [
+  {
+   "at": [
+    "axe",
+    1,
+    -4
+   ],
+   "kind": "dust_hit",
+   "on": "axe"
+  },
+  {
+   "at": [
+    "quarter",
+    1,
+    -4
+   ],
+   "kind": "glow",
+   "on": "quarter"
+  },
+  {
+   "at": [
+    "drop",
+    1,
+    -4
+   ],
+   "kind": "glow",
+   "on": "eyedropper"
+  },
+  {
+   "at": [
+    "party",
+    1,
+    -4
+   ],
+   "kind": "glow",
+   "on": "bunting"
+  },
+  {
+   "at": [
+    "eyedropper",
+    1,
+    -4
+   ],
+   "kind": "glow",
+   "on": "eyedropper"
+  },
+  {
+   "at": [
+    "eyedropper",
+    2,
+    -4
+   ],
+   "kind": "glow",
+   "on": "eyedropper"
+  }
+ ],
+ "moods": [
+  {
+   "at": [
+    "head",
+    1
+   ],
+   "look": "spot_hero"
+  },
+  {
+   "at": [
+    "axe",
+    1
+   ],
+   "look": "flash_red"
+  },
+  {
+   "at": [
+    "next",
+    1
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "face",
+    1
+   ],
+   "look": "spot_hero"
+  },
+  {
+   "at": [
+    "says",
+    1
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "then",
+    1
+   ],
+   "look": "flash_red"
+  },
+  {
+   "at": [
+    "then",
+    2
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "laughing",
+    1
+   ],
+   "look": "spot_hero"
+  },
+  {
+   "at": [
+    "you",
+    1
+   ],
+   "look": "spot_hero"
+  },
+  {
+   "at": [
+    "legs",
+    1
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "so",
+    3
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "town",
+    1
+   ],
+   "look": "spot_hero"
+  }
+ ],
+ "sound": [
+  {
+   "at": [
+    "milk",
+    1
+   ],
+   "name": "drip_small"
+  },
+  {
+   "at": [
+    "axe",
+    1
+   ],
+   "name": "axe_chop"
+  },
+  {
+   "at": [
+    "stands",
+    1
+   ],
+   "name": "chicken_squawk"
+  },
+  {
+   "at": [
+    "face",
+    1
+   ],
+   "name": "laugh_short"
+  },
+  {
+   "at": [
+    "drop",
+    1
+   ],
+   "name": "drip_small"
+  },
+  {
+   "at": [
+    "then",
+    1
+   ],
+   "name": "lab_hum"
+  },
+  {
+   "at": [
+    "then",
+    2
+   ],
+   "name": "carnival_sting"
+  },
+  {
+   "at": [
+    "quarter",
+    1
+   ],
+   "name": "coin_ding"
+  },
+  {
+   "at": [
+    "you",
+    1
+   ],
+   "name": "whoosh_soft"
+  },
+  {
+   "at": [
+    "party",
+    1
+   ],
+   "name": "crowd_cheer"
+  },
+  {
+   "at": [
+    "year",
+    1
+   ],
+   "name": "drip_small"
+  }
+ ]
+}
