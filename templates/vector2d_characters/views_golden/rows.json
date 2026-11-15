@@ -1,0 +1,30 @@
+{
+ "approved": "View sheet v5 (APPROVED_character_views_v5.png). Re-make the pictures only after the user approved a new sheet.",
+ "max_diff_pct": 0.05,
+ "characters": [
+  {
+   "name": "stationmaster",
+   "puppet": "stationmaster"
+  },
+  {
+   "name": "inspector",
+   "puppet": "cast:railway",
+   "allow_pct": 0.12,
+   "note": "his face has the lettering heh. in a system font: 0.07 % differs between the PC and the cloud",
+   "sheet": "episodes/baboon-signalman/cast/sheets/inspector.mjs"
+  },
+  {
+   "name": "lady",
+   "puppet": "form:lady"
+  },
+  {
+   "name": "dad",
+   "puppet": "form:dad"
+  },
+  {
+   "name": "jack",
+   "puppet": "cast:jack",
+   "sheet": "episodes/baboon-signalman/cast/sheets/jack.mjs"
+  }
+ ]
+}

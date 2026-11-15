@@ -1,0 +1,1209 @@
+{
+ "file": "mix.wav",
+ "sr": 48000,
+ "channels": 2,
+ "bits": 24,
+ "samples": 3726400,
+ "seconds": 77.6333,
+ "gates": {
+  "voice_vs_background_median_gap_db": {
+   "value": 17.29,
+   "gate": ">= 15",
+   "ok": true
+  },
+  "background_louder_than_voice_pct": {
+   "value": 0.0,
+   "gate": "< 1",
+   "ok": true
+  },
+  "integrated_lufs": {
+   "value": -14.0,
+   "gate": "-14 +/- 0.5",
+   "ok": true
+  },
+  "true_peak_dbtp": {
+   "value": -1.8,
+   "gate": "<= -1.5",
+   "ok": true
+  },
+  "duck_db_while_talking": {
+   "value": -13.0,
+   "gate": "about -13",
+   "ok": true
+  },
+  "music_bed_under_voice_db": {
+   "value": 20.74,
+   "gate": "about 20",
+   "ok": true
+  },
+  "exact_length": {
+   "value": [
+    3726400,
+    77.6333
+   ],
+   "gate": "3726400 samples = 2329 frames at 30 fps",
+   "ok": true
+  },
+  "voice_timing_lag_samples": {
+   "value": 0,
+   "gate": "0",
+   "ok": true
+  },
+  "whistle_counts": {
+   "value": [
+    "whistle_1@19.73: 1 of 1 (SFX stem: 1)",
+    "whistle_2@47.47: 2 of 2 (SFX stem: 2)",
+    "whistle_4@49.67: 4 of 4 (SFX stem: 4)",
+    "whistle_3 on 'whistled' (follows the picture: 3 puffs)@57.27: 3 of 3 (SFX stem: 3)",
+    "whistle_far_soft@64.43: 2 of 2 (SFX stem: 2)"
+   ],
+   "gate": "counted = expected, on the whistle bus and on the SFX stem",
+   "ok": true
+  },
+  "single_hits_off_anchor_ms": {
+   "value": 7.3,
+   "gate": "<= 66.7 (2 frames), 17 hits checked",
+   "ok": true
+  },
+  "gates_on_words_json_spans": {
+   "value": [
+    17.51,
+    0.288
+   ],
+   "gate": ">= 15, < 1",
+   "ok": true
+  }
+ },
+ "all_pass": true,
+ "ffmpeg_ebur128": {
+  "I": -14.0,
+  "LRA": 1.5,
+  "TP": -1.8
+ },
+ "ffmpeg_loudnorm_pass1": {
+  "input_i": "-14.05",
+  "input_tp": "-1.80",
+  "input_lra": "1.30",
+  "input_thresh": "-24.11",
+  "output_i": "-14.24",
+  "output_tp": "-1.77",
+  "output_lra": "1.10",
+  "output_thresh": "-24.29",
+  "normalization_type": "dynamic",
+  "target_offset": "0.24"
+ },
+ "ffmpeg_loudnorm_pass2": {
+  "input_i": "-14.01",
+  "input_tp": "-1.81",
+  "input_lra": "1.50",
+  "input_thresh": "-24.07",
+  "output_i": "-13.96",
+  "output_tp": "-1.76",
+  "output_lra": "1.40",
+  "output_thresh": "-24.02",
+  "normalization_type": "linear",
+  "target_offset": "-0.04"
+ },
+ "ffmpeg_loudnorm_check_of_mix": {
+  "input_i": "-14.01",
+  "input_tp": "-1.75",
+  "input_lra": "1.40"
+ },
+ "loudnorm_gain_db": 0.05,
+ "loudnorm_residual_db": -126.1,
+ "stems_sum_vs_mix_db": -126.1,
+ "premaster_gain_db": 1.88,
+ "limiter_max_gr_db": -1.65,
+ "talking_windows_voice_activity": {
+  "windows": 746,
+  "gap_median_db": 17.29,
+  "gap_min_db": 2.94,
+  "gap_p05_db": 9.43,
+  "bg_louder_pct": 0.0,
+  "music_gap_median_db": 20.74,
+  "sfx_gap_median_db": 26.17,
+  "amb_gap_median_db": 26.95,
+  "windows_under_4db": [
+   [
+    28.9,
+    4.0,
+    4.3,
+    16.5
+   ],
+   [
+    52.1,
+    2.9,
+    3.5,
+    14.9
+   ],
+   [
+    52.2,
+    3.6,
+    4.4,
+    14.0
+   ],
+   [
+    77.1,
+    3.4,
+    7.1,
+    6.1
+   ]
+  ]
+ },
+ "talking_windows_words_json": {
+  "windows": 694,
+  "gap_median_db": 17.51,
+  "gap_min_db": -20.33,
+  "gap_p05_db": 10.06,
+  "bg_louder_pct": 0.288,
+  "music_gap_median_db": 20.98,
+  "sfx_gap_median_db": 25.78,
+  "amb_gap_median_db": 27.1,
+  "windows_under_4db": [
+   [
+    28.9,
+    4.0,
+    4.3,
+    16.5
+   ],
+   [
+    55.8,
+    -12.9,
+    -10.8,
+    -8.4
+   ],
+   [
+    55.9,
+    -20.3,
+    -18.3,
+    -15.7
+   ],
+   [
+    56.0,
+    1.5,
+    3.2,
+    6.8
+   ]
+  ]
+ },
+ "talk_spans": [
+  [
+   0.02,
+   12.27
+  ],
+  [
+   12.72,
+   23.56
+  ],
+  [
+   24.01,
+   42.24
+  ],
+  [
+   42.69,
+   55.6
+  ],
+  [
+   56.14,
+   69.72
+  ],
+  [
+   70.17,
+   77.15
+  ]
+ ],
+ "talk_s": 74.79,
+ "voice": {
+  "chain": "zero-phase 80 Hz high-pass, 3:1 compression, level; no time or pitch change",
+  "lag_samples": 0,
+  "corr_with_original": 0.9764,
+  "stem_lufs": -14.08
+ },
+ "music": {
+  "track": "Pizzicato Comedy.mp3",
+  "bpm": 110.0,
+  "segments": [
+   {
+    "film": [
+     0.0,
+     57.81
+    ],
+    "track": [
+     2.79,
+     60.6
+    ],
+    "what": "sections A + B, from the downbeat of bar 2"
+   },
+   {
+    "film": [
+     57.815,
+     77.633
+    ],
+    "track": [
+     80.51,
+     100.329
+    ],
+    "what": "section D + the track's own two-hit ending"
+   }
+  ],
+  "cut_out": [
+   [
+    0.0,
+    2.79
+   ],
+   [
+    60.6,
+    80.51
+   ]
+  ],
+  "final_hits_expected": [
+   76.654,
+   77.205
+  ],
+  "final_hits_measured": [
+   76.645,
+   77.19
+  ],
+  "bed_gain_db": -6.31,
+  "duck_db": -13.0,
+  "lufs_while_talking": -33.99,
+  "stem_lufs": -33.3
+ },
+ "ambience": {
+  "sets": [
+   [
+    0.0,
+    65.433,
+    "junction: daytime veld",
+    -36.0
+   ],
+   [
+    65.433,
+    70.133,
+    "office: room tone + clock",
+    null
+   ],
+   [
+    70.133,
+    77.633,
+    "junction: daytime veld",
+    -36.0
+   ]
+  ],
+  "sources": {
+   "veld": "wind: synth (sfx_gen.breeze); insects: AmbDayInsects_BU01.1.mp3 (looped); birds: BirdChirp_SEU02.1.mp3, BirdSandpiper_S08AN.33.mp3",
+   "office": "room tone: Ambiences (Room filler).wav; clock: Clock Tick.mp3"
+  },
+  "duck_db": -6.0,
+  "lufs_while_talking": -40.5
+ },
+ "sync_ms": [
+  [
+   1.2,
+   "lever_clank",
+   0.0
+  ],
+  [
+   1.2,
+   "lever_clank",
+   0.0
+  ],
+  [
+   18.233,
+   "lever_clank",
+   0.0
+  ],
+  [
+   18.233,
+   "lever_clank",
+   0.0
+  ],
+  [
+   18.667,
+   "lever_clank",
+   0.0
+  ],
+  [
+   18.667,
+   "lever_clank",
+   0.0
+  ],
+  [
+   48.867,
+   "lever_clank",
+   0.0
+  ],
+  [
+   48.867,
+   "lever_clank",
+   0.0
+  ],
+  [
+   61.067,
+   "knock_3",
+   -7.3
+  ],
+  [
+   61.3,
+   "knock_3",
+   -6.9
+  ],
+  [
+   61.533,
+   "knock_3",
+   -6.6
+  ],
+  [
+   61.7,
+   "knock_2",
+   2.6
+  ],
+  [
+   62.0,
+   "knock_2",
+   2.6
+  ],
+  [
+   68.367,
+   "stamp_thump",
+   4.0
+  ],
+  [
+   68.367,
+   "stamp_thump",
+   4.0
+  ],
+  [
+   71.533,
+   "coins_drop",
+   0.0
+  ],
+  [
+   73.0,
+   "bottle_clink",
+   0.0
+  ]
+ ],
+ "sfx": {
+  "duck_db": -13.0,
+  "hero_duck_db": -5.0,
+  "stem_lufs": -28.45,
+  "voice_usual_50ms_dbfs": -16.7
+ },
+ "whistles": [
+  {
+   "t": 19.733,
+   "name": "whistle_1",
+   "expected": 1,
+   "counted": 1,
+   "onsets": [
+    19.75
+   ],
+   "ok": true,
+   "counted_in_sfx_stem": 1,
+   "onsets_in_sfx_stem": [
+    19.765
+   ]
+  },
+  {
+   "t": 47.467,
+   "name": "whistle_2",
+   "expected": 2,
+   "counted": 2,
+   "onsets": [
+    47.485,
+    47.945
+   ],
+   "ok": true,
+   "counted_in_sfx_stem": 2,
+   "onsets_in_sfx_stem": [
+    47.5,
+    47.96
+   ]
+  },
+  {
+   "t": 49.667,
+   "name": "whistle_4",
+   "expected": 4,
+   "counted": 4,
+   "onsets": [
+    49.685,
+    49.89,
+    50.1,
+    50.305
+   ],
+   "ok": true,
+   "counted_in_sfx_stem": 4,
+   "onsets_in_sfx_stem": [
+    49.7,
+    49.91,
+    50.115,
+    50.325
+   ]
+  },
+  {
+   "t": 57.267,
+   "name": "whistle_3 on 'whistled' (follows the picture: 3 puffs)",
+   "expected": 3,
+   "counted": 3,
+   "onsets": [
+    57.285,
+    57.705,
+    58.12
+   ],
+   "ok": true,
+   "counted_in_sfx_stem": 3,
+   "onsets_in_sfx_stem": [
+    57.3,
+    57.72,
+    58.14
+   ]
+  },
+  {
+   "t": 64.43333333333334,
+   "name": "whistle_far_soft",
+   "expected": 2,
+   "counted": 2,
+   "onsets": [
+    64.45,
+    64.915
+   ],
+   "ok": true,
+   "counted_in_sfx_stem": 2,
+   "onsets_in_sfx_stem": [
+    64.465,
+    64.93
+   ]
+  }
+ ],
+ "cues": [
+  {
+   "t": 1.2,
+   "anchor": "frame 36",
+   "name": "lever_clank",
+   "label": "lever thrown: ratchet travel, lands on the anchor",
+   "src": "LeverMechanical_SEU04.39.mp3",
+   "u": 10,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -26.7,
+   "under_voice_db": 10.0,
+   "level": "10 dB under the voice"
+  },
+  {
+   "t": 1.2,
+   "anchor": "frame 36",
+   "name": "lever_clank",
+   "label": "lever clank: iron body",
+   "src": "ImpactMetal_S08IM.404.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 1.333,
+   "anchor": "frame 40",
+   "name": "signal_arm_up",
+   "label": "signal wire cranks the arm up (arm moves f36-56)",
+   "src": "LeverCrankLong_SEU02.34.mp3",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 1.453,
+   "anchor": "frame 40 +0.12",
+   "name": "signal_arm_up",
+   "label": "arm pivot squeak",
+   "src": "MetalHingeSqueak_S011FO.667.mp3",
+   "u": 18,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -34.7,
+   "under_voice_db": 18.0,
+   "level": "18 dB under the voice"
+  },
+  {
+   "t": 6.867,
+   "anchor": "train#1",
+   "name": "train_pass_far",
+   "label": "a train rushes through, heard not seen (the accident; picture kick + red flash on the word); loudest on the anchor",
+   "src": "synth",
+   "u": 9,
+   "stem": "hero",
+   "align": "start",
+   "in_mix_db": -25.7,
+   "under_voice_db": 9.0,
+   "level": "9 dB under the voice"
+  },
+  {
+   "t": 10.133,
+   "anchor": "baboon#1",
+   "name": "coin_ping",
+   "label": "coin flick ping (coin glint)",
+   "src": "CoinFlipLand_AP1.1081.mp3",
+   "u": 13,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -29.9,
+   "under_voice_db": 13.2,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 13.567,
+   "anchor": "pushes#1",
+   "name": "trolley_wheels_loop",
+   "label": "trolley wheels on the rails until it stops (f478): rolling hum, clack per push step, spark scrapes on trolley#1 and rails#1",
+   "src": "synth",
+   "u": 13,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -29.7,
+   "under_voice_db": 13.0,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 18.233,
+   "anchor": "pulling#1",
+   "name": "lever_clank",
+   "label": "lever thrown: ratchet travel, lands on the anchor",
+   "src": "LeverMechanical_SEU04.39.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 18.233,
+   "anchor": "pulling#1",
+   "name": "lever_clank",
+   "label": "lever clank: iron body",
+   "src": "ImpactMetal_S08IM.404.mp3",
+   "u": 14,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -30.7,
+   "under_voice_db": 14.0,
+   "level": "14 dB under the voice"
+  },
+  {
+   "t": 18.667,
+   "anchor": "levers#2",
+   "name": "lever_clank",
+   "label": "lever thrown: ratchet travel, lands on the anchor",
+   "src": "LeverMechanical_SEU04.39.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 18.667,
+   "anchor": "levers#2",
+   "name": "lever_clank",
+   "label": "lever clank: iron body",
+   "src": "ImpactMetal_S08IM.404.mp3",
+   "u": 14,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -30.7,
+   "under_voice_db": 14.0,
+   "level": "14 dB under the voice"
+  },
+  {
+   "t": 19.5,
+   "anchor": "train#2",
+   "name": "train_arrive_brakes",
+   "label": "engine slides in and stops (f551-596): chuffs slowing, brake squeal from the anchor -0.4 s until just before the toot, buffer clunk at the stop, steam sigh",
+   "src": "synth",
+   "u": 11,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -27.7,
+   "under_voice_db": 11.0,
+   "level": "11 dB under the voice"
+  },
+  {
+   "t": 19.733,
+   "anchor": "toots#1",
+   "name": "whistle_1",
+   "label": "steam whistle, 1 toot",
+   "src": "TrainWhistle_BWU.166.mp3 (first toot, 0.16 s unit)",
+   "u": 7,
+   "stem": "hero",
+   "align": "toot starts on the picture's steam puffs",
+   "in_mix_db": -23.7,
+   "under_voice_db": 7.0,
+   "level": "7 dB under the voice"
+  },
+  {
+   "t": 21.867,
+   "anchor": "key#1",
+   "name": "key_jingle",
+   "label": "key ring jingle",
+   "src": "synth",
+   "u": 13,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -29.7,
+   "under_voice_db": 13.0,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 21.917,
+   "anchor": "key#1 +0.05",
+   "name": "key_jingle",
+   "label": "key scrape off the hook",
+   "src": "SkeletonKeyRemove_S011FO.794.mp3",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 24.133,
+   "anchor": "frame 716 (steam transition)",
+   "name": "(extra, picture)",
+   "label": "steam wipe between the two trains",
+   "src": "synth",
+   "u": 15,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -31.4,
+   "under_voice_db": 14.7,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 24.433,
+   "anchor": "lady#1 -10f",
+   "name": "train_roll_stop",
+   "label": "the lady's train rolls up and stops (f711-735): slow clack, soft squeal, clunk, steam sigh",
+   "src": "synth",
+   "u": 14,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -30.7,
+   "under_voice_db": 14.0,
+   "level": "14 dB under the voice"
+  },
+  {
+   "t": 27.367,
+   "anchor": "baboon#2 +12f",
+   "name": "(extra, picture)",
+   "label": "lever clank the picture draws (fx lever_clank), no sound event",
+   "src": "LeverMechanical_SEU04.39.mp3",
+   "u": 15,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 27.367,
+   "anchor": "baboon#2 +12f",
+   "name": "(extra, picture)",
+   "label": "lever clank: iron body",
+   "src": "ImpactMetal_S08IM.404.mp3",
+   "u": 17,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -33.7,
+   "under_voice_db": 17.0,
+   "level": "17 dB under the voice"
+  },
+  {
+   "t": 28.603,
+   "anchor": "screams#1 -0.03",
+   "name": "lady_scream",
+   "label": "the lady screams",
+   "src": "short-woman-panic-scream_zJsEZS4_-SBA-300055118.wav",
+   "u": 5.5,
+   "stem": "hero",
+   "align": "start",
+   "in_mix_db": -22.2,
+   "under_voice_db": 5.5,
+   "level": "5.5 dB under the voice"
+  },
+  {
+   "t": 30.6,
+   "anchor": "writes#1",
+   "name": "paper_flutter",
+   "label": "letters flutter out of the carriage",
+   "src": "Multiple Paper Turn.wav",
+   "u": 13,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -29.7,
+   "under_voice_db": 13.0,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 30.75,
+   "anchor": "writes#1 +0.15",
+   "name": "paper_flutter",
+   "label": "more paper in the air",
+   "src": "Rustling Paper 1.wav",
+   "u": 16,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -32.7,
+   "under_voice_db": 16.0,
+   "level": "16 dB under the voice"
+  },
+  {
+   "t": 32.4,
+   "anchor": "inspector#1",
+   "name": "boots_on_gravel",
+   "label": "inspector's boots, 4 steps (first step on the anchor)",
+   "src": "FOLYFeet_Footsteps Boots Walk Concrete Gritty Distance_Ocular Sounds_All-Round Footsteps_The Complete Footsteps Collection.wav",
+   "u": 12,
+   "stem": "sfx",
+   "align": "clip 0.11 s on anchor",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 32.4,
+   "anchor": "inspector#1 +0.00",
+   "name": "boots_on_gravel",
+   "label": "gravel crunch under step 1",
+   "src": "ImpactGravel_S08IM.311.mp3",
+   "u": 17,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -33.7,
+   "under_voice_db": 17.0,
+   "level": "17 dB under the voice"
+  },
+  {
+   "t": 32.6,
+   "anchor": "picture f978-1032",
+   "name": "(extra, picture)",
+   "label": "the lady's train pulls away",
+   "src": "synth",
+   "u": 18,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -34.7,
+   "under_voice_db": 18.0,
+   "level": "18 dB under the voice"
+  },
+  {
+   "t": 32.98,
+   "anchor": "inspector#1 +0.58",
+   "name": "boots_on_gravel",
+   "label": "gravel crunch under step 2",
+   "src": "ImpactGravel_S08IM.311.mp3",
+   "u": 18,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -34.7,
+   "under_voice_db": 18.0,
+   "level": "18 dB under the voice"
+  },
+  {
+   "t": 33.54,
+   "anchor": "inspector#1 +1.14",
+   "name": "boots_on_gravel",
+   "label": "gravel crunch under step 3",
+   "src": "ImpactGravel_S08IM.311.mp3",
+   "u": 17,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -33.7,
+   "under_voice_db": 17.0,
+   "level": "17 dB under the voice"
+  },
+  {
+   "t": 34.13,
+   "anchor": "inspector#1 +1.73",
+   "name": "boots_on_gravel",
+   "label": "gravel crunch under step 4",
+   "src": "ImpactGravel_S08IM.311.mp3",
+   "u": 18,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -34.7,
+   "under_voice_db": 18.0,
+   "level": "18 dB under the voice"
+  },
+  {
+   "t": 43.767,
+   "anchor": "train#4",
+   "name": "train_pass_fast",
+   "label": "train 1 of 'train after train' (f1301-1353): already loud on the anchor, loudest alongside Jack at 44.04 s (picture kick)",
+   "src": "synth",
+   "u": 10,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -26.7,
+   "under_voice_db": 10.0,
+   "level": "10 dB under the voice"
+  },
+  {
+   "t": 45.86,
+   "anchor": "picture f1358-1404",
+   "name": "(extra, picture)",
+   "label": "another train of 'train after train' passes behind Jack, alongside at 45.86 s",
+   "src": "synth",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 47.467,
+   "anchor": "toots#2",
+   "name": "whistle_2",
+   "label": "steam whistle, 2 toots, 0.461 s apart",
+   "src": "TrainWhistle_BWU.166.mp3 (first toot, 0.16 s unit)",
+   "u": 7,
+   "stem": "hero",
+   "align": "toot starts on the picture's steam puffs",
+   "in_mix_db": -23.7,
+   "under_voice_db": 7.0,
+   "level": "7 dB under the voice"
+  },
+  {
+   "t": 47.674,
+   "anchor": "picture f1407-1467",
+   "name": "(extra, picture)",
+   "label": "another train of 'train after train' passes behind Jack, alongside at 47.67 s",
+   "src": "synth",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 48.867,
+   "anchor": "lever#1",
+   "name": "lever_clank",
+   "label": "lever thrown: ratchet travel, lands on the anchor",
+   "src": "LeverMechanical_SEU04.39.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 48.867,
+   "anchor": "lever#1",
+   "name": "lever_clank",
+   "label": "lever clank: iron body",
+   "src": "ImpactMetal_S08IM.404.mp3",
+   "u": 14,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -30.7,
+   "under_voice_db": 14.0,
+   "level": "14 dB under the voice"
+  },
+  {
+   "t": 49.667,
+   "anchor": "toots#3",
+   "name": "whistle_4",
+   "label": "steam whistle, 4 toots, 0.208 s apart",
+   "src": "TrainWhistle_BWU.166.mp3 (first toot, 0.16 s unit)",
+   "u": 7,
+   "stem": "hero",
+   "align": "toot starts on the picture's steam puffs",
+   "in_mix_db": -23.7,
+   "under_voice_db": 7.0,
+   "level": "7 dB under the voice"
+  },
+  {
+   "t": 49.841,
+   "anchor": "picture f1472-1532",
+   "name": "(extra, picture)",
+   "label": "another train of 'train after train' passes behind Jack, alongside at 49.84 s",
+   "src": "synth",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 50.567,
+   "anchor": "key#2",
+   "name": "key_jingle",
+   "label": "key ring jingle",
+   "src": "synth",
+   "u": 13,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -30.3,
+   "under_voice_db": 13.6,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 50.617,
+   "anchor": "key#2 +0.05",
+   "name": "key_jingle",
+   "label": "key scrape off the hook",
+   "src": "SkeletonKeyRemove_S011FO.794.mp3",
+   "u": 15,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -31.7,
+   "under_voice_db": 15.0,
+   "level": "15 dB under the voice"
+  },
+  {
+   "t": 51.8,
+   "anchor": "up#4",
+   "name": "train_pass_fast_close",
+   "label": "the last train passes the lens on the anchor (kick 2.5), carriages stream past to f1636",
+   "src": "synth",
+   "u": 6,
+   "stem": "hero",
+   "align": "start",
+   "in_mix_db": -22.7,
+   "under_voice_db": 6.0,
+   "level": "6 dB under the voice"
+  },
+  {
+   "t": 51.8,
+   "anchor": "up#4",
+   "name": "train_pass_fast_close",
+   "label": "air slap as the engine passes",
+   "src": "Air Tail Woosh.wav",
+   "u": 9,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -25.7,
+   "under_voice_db": 9.0,
+   "level": "9 dB under the voice"
+  },
+  {
+   "t": 55.2,
+   "anchor": "notes#1",
+   "name": "pages_flip",
+   "label": "inspector flips through his notebook",
+   "src": "ManualFlip_AP1.1243.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "clip 0.11 s on anchor",
+   "in_mix_db": -23.4,
+   "under_voice_db": 6.7,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 56.5,
+   "anchor": "picture f1695-1740",
+   "name": "(extra, picture)",
+   "label": "a train comes up the main line and stops (seen from above)",
+   "src": "synth",
+   "u": 17,
+   "stem": "sfx",
+   "align": "start",
+   "in_mix_db": -33.7,
+   "under_voice_db": 17.0,
+   "level": "17 dB under the voice"
+  },
+  {
+   "t": 57.267,
+   "anchor": "whistled#1 (follows the picture: 3 puffs; the plan said whistle_2)",
+   "name": "whistle_3 on 'whistled' (follows the picture: 3 puffs)",
+   "label": "steam whistle, 3 toots, 0.419 s apart",
+   "src": "TrainWhistle_BWU.166.mp3 (first toot, 0.16 s unit)",
+   "u": 7,
+   "stem": "hero",
+   "align": "toot starts on the picture's steam puffs",
+   "in_mix_db": -23.7,
+   "under_voice_db": 7.0,
+   "level": "7 dB under the voice"
+  },
+  {
+   "t": 61.067,
+   "anchor": "knock#1 -2f",
+   "name": "knock_3",
+   "label": "mom's knock 1 of 3 (light, quick)",
+   "src": "HammerHitWood_S011IN.300.mp3",
+   "u": 9,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -25.7,
+   "under_voice_db": 9.0,
+   "level": "9 dB under the voice"
+  },
+  {
+   "t": 61.3,
+   "anchor": "knock#1 +5f",
+   "name": "knock_3",
+   "label": "mom's knock 2 of 3 (light, quick)",
+   "src": "HammerHitWood_S011IN.300.mp3",
+   "u": 10,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -26.7,
+   "under_voice_db": 10.0,
+   "level": "10 dB under the voice"
+  },
+  {
+   "t": 61.533,
+   "anchor": "knock#1 +12f",
+   "name": "knock_3",
+   "label": "mom's knock 3 of 3 (light, quick)",
+   "src": "HammerHitWood_S011IN.300.mp3",
+   "u": 8,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -24.7,
+   "under_voice_db": 8.0,
+   "level": "8 dB under the voice"
+  },
+  {
+   "t": 61.7,
+   "anchor": "mailman's#1 +0.07",
+   "name": "knock_2",
+   "label": "the mailman's knock 1 of 2 (heavy, slow)",
+   "src": "Wood2X4Impact_AP1.1218.mp3",
+   "u": 5,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -21.7,
+   "under_voice_db": 5.0,
+   "level": "5 dB under the voice"
+  },
+  {
+   "t": 62.0,
+   "anchor": "mailman's#1 +0.37",
+   "name": "knock_2",
+   "label": "the mailman's knock 2 of 2 (heavy, slow)",
+   "src": "Wood2X4Impact_AP1.1218.mp3",
+   "u": 5,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -22.9,
+   "under_voice_db": 6.2,
+   "level": "5 dB under the voice"
+  },
+  {
+   "t": 64.633,
+   "anchor": "listening#1 (rings -0.20 / +0.27 s)",
+   "name": "whistle_far_soft",
+   "label": "steam whistle, 2 toots, 0.467 s apart, far: low-passed + reverb",
+   "src": "TrainWhistle_BWU.166.mp3 (first toot, 0.16 s unit)",
+   "u": 14,
+   "stem": "hero",
+   "align": "toot starts on the two hearing rings",
+   "in_mix_db": -30.7,
+   "under_voice_db": 14.0,
+   "level": "14 dB under the voice"
+  },
+  {
+   "t": 65.433,
+   "anchor": "frame 1963",
+   "name": "whistle_steam_whoosh",
+   "label": "steam whites out the cut to the office",
+   "src": "synth",
+   "u": 11,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -27.7,
+   "under_voice_db": 11.0,
+   "level": "11 dB under the voice"
+  },
+  {
+   "t": 65.433,
+   "anchor": "frame 1963",
+   "name": "whistle_steam_whoosh",
+   "label": "air whoosh under the steam",
+   "src": "Air Tail Woosh.wav",
+   "u": 13,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -29.7,
+   "under_voice_db": 13.0,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 68.367,
+   "anchor": "letter#1",
+   "name": "stamp_thump",
+   "label": "rubber stamp hits the letter: wood crack",
+   "src": "ImpactWoodHit_S011IM.354.mp3",
+   "u": 1,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -17.7,
+   "under_voice_db": 1.0,
+   "level": "1 dB under the voice"
+  },
+  {
+   "t": 68.367,
+   "anchor": "letter#1",
+   "name": "stamp_thump",
+   "label": "stamp: knock",
+   "src": "HammerHitWood_S011IN.300.mp3",
+   "u": 4,
+   "stem": "hero",
+   "align": "peak",
+   "in_mix_db": -20.7,
+   "under_voice_db": 4.0,
+   "level": "4 dB under the voice"
+  },
+  {
+   "t": 71.533,
+   "anchor": "cents#1",
+   "name": "coins_drop",
+   "label": "twenty cents into the hand",
+   "src": "CoinsDrop_AP1.1086.mp3",
+   "u": 13,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -29.7,
+   "under_voice_db": 13.0,
+   "level": "13 dB under the voice"
+  },
+  {
+   "t": 73.0,
+   "anchor": "beer#1",
+   "name": "bottle_clink",
+   "label": "beer bottle clink",
+   "src": "GlassBottle_AP1.1198.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "peak",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  },
+  {
+   "t": 76.367,
+   "anchor": "single#3",
+   "name": "lever_creak_ready",
+   "label": "Jack's hand settles on the lever: slow creak",
+   "src": "LeverSqueakSlow_S08CT.101.mp3",
+   "u": 12,
+   "stem": "sfx",
+   "align": "clip 0.03 s on anchor",
+   "in_mix_db": -28.7,
+   "under_voice_db": 12.0,
+   "level": "12 dB under the voice"
+  }
+ ]
+}

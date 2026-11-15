@@ -1,0 +1,157 @@
+[
+ {
+  "t": 1.2,
+  "name": "lever_clank",
+  "gain": 0
+ },
+ {
+  "t": 1.333,
+  "name": "signal_arm_up",
+  "gain": 0
+ },
+ {
+  "t": 6.867,
+  "name": "train_pass_far",
+  "gain": 0
+ },
+ {
+  "t": 10.133,
+  "name": "coin_ping",
+  "gain": 0
+ },
+ {
+  "t": 13.567,
+  "name": "trolley_wheels_loop",
+  "gain": 0
+ },
+ {
+  "t": 18.233,
+  "name": "lever_clank",
+  "gain": 0
+ },
+ {
+  "t": 18.667,
+  "name": "lever_clank",
+  "gain": 0
+ },
+ {
+  "t": 19.5,
+  "name": "train_arrive_brakes",
+  "gain": 0
+ },
+ {
+  "t": 19.733,
+  "name": "whistle_1",
+  "gain": 0
+ },
+ {
+  "t": 21.867,
+  "name": "key_jingle",
+  "gain": 0
+ },
+ {
+  "t": 24.433,
+  "name": "train_roll_stop",
+  "gain": 0
+ },
+ {
+  "t": 28.633,
+  "name": "lady_scream",
+  "gain": 0
+ },
+ {
+  "t": 30.6,
+  "name": "paper_flutter",
+  "gain": 0
+ },
+ {
+  "t": 32.4,
+  "name": "boots_on_gravel",
+  "gain": 0
+ },
+ {
+  "t": 43.767,
+  "name": "train_pass_fast",
+  "gain": 0
+ },
+ {
+  "t": 47.467,
+  "name": "whistle_2",
+  "gain": 0
+ },
+ {
+  "t": 48.867,
+  "name": "lever_clank",
+  "gain": 0
+ },
+ {
+  "t": 49.667,
+  "name": "whistle_4",
+  "gain": 0
+ },
+ {
+  "t": 50.567,
+  "name": "key_jingle",
+  "gain": 0
+ },
+ {
+  "t": 51.8,
+  "name": "train_pass_fast_close",
+  "gain": 0
+ },
+ {
+  "t": 55.2,
+  "name": "pages_flip",
+  "gain": 0
+ },
+ {
+  "t": 57.267,
+  "name": "whistle_2",
+  "gain": 0
+ },
+ {
+  "t": 58.467,
+  "name": "whistle_3",
+  "gain": 0
+ },
+ {
+  "t": 61.133,
+  "name": "knock_3",
+  "gain": 0
+ },
+ {
+  "t": 61.633,
+  "name": "knock_2",
+  "gain": 0
+ },
+ {
+  "t": 64.633,
+  "name": "whistle_far_soft",
+  "gain": 0
+ },
+ {
+  "t": 65.433,
+  "name": "whistle_steam_whoosh",
+  "gain": 0
+ },
+ {
+  "t": 68.367,
+  "name": "stamp_thump",
+  "gain": 0
+ },
+ {
+  "t": 71.533,
+  "name": "coins_drop",
+  "gain": 0
+ },
+ {
+  "t": 73.0,
+  "name": "bottle_clink",
+  "gain": 0
+ },
+ {
+  "t": 76.367,
+  "name": "lever_creak_ready",
+  "gain": 0
+ }
+]

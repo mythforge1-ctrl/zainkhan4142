@@ -1,0 +1,4137 @@
+{
+ "title": "The Signalman Who Was a Baboon",
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "words": "voice/words.json",
+ "tween": {
+  "frames": 7,
+  "ease": "out",
+  "walk_frames": 8,
+  "face_frames": 8
+ },
+ "caption_scale": 0.5,
+ "auto_view": true,
+ "puppet_pkg": [
+  "cast",
+  "../../templates/vector2d_characters/code"
+ ],
+ "camera_idea": {
+  "name": "He never looks up",
+  "why": "Jack runs the junction by ear and never lifts his eyes, so the camera does the looking for him: it lives at the baboon's eye height at his levers, and every time something arrives above him (the cab, the lady's window, the tall inspector) it looks up and comes back down to the same calm face.",
+  "signature": "On 'he doesn't even look up' the camera, for once, does not look up either: it stays on Jack while the train shakes the frame; then it leaves its post for the only time, runs down the line with the last train to the inspector and his notes, and on 'You see' rises over the whole junction before it sinks back to Jack's ear."
+ },
+ "cast": {
+  "jack": {
+   "puppet": "cast:jack",
+   "height": 0.85,
+   "heads_tall": 1.8,
+   "walk_speed": 99
+  },
+  "wide": {
+   "puppet": "stationmaster",
+   "height": 1.75,
+   "heads_tall": 2.9,
+   "walk_speed": 99
+  },
+  "inspector": {
+   "puppet": "cast:railway",
+   "height": 1.95,
+   "heads_tall": 4.0,
+   "walk_speed": 99
+  },
+  "lady": {
+   "puppet": "form:lady",
+   "height": 1.6,
+   "heads_tall": 2.8
+  },
+  "driver": {
+   "puppet": "form:dad",
+   "height": 1.7,
+   "heads_tall": 3.0
+  }
+ },
+ "places": {
+  "junction": {
+   "set": "junction",
+   "light": "day",
+   "backdrop": 12,
+   "events": [
+    {
+     "f0": 0,
+     "f1": 1,
+     "obj": "trolley",
+     "from": [
+      2.3,
+      0.2,
+      0
+     ],
+     "to": [
+      2.3,
+      0.2,
+      0
+     ]
+    },
+    {
+     "f0": 22,
+     "f1": 36,
+     "obj": "lever5",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 36,
+     "f1": 56,
+     "obj": "signal_arm",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 385,
+     "f1": 386,
+     "obj": "trolley",
+     "from": [
+      2.3,
+      0.2,
+      0
+     ],
+     "to": [
+      -9,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 385,
+     "f1": 386,
+     "obj": "lever5",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 385,
+     "f1": 386,
+     "obj": "signal_arm",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 410,
+     "f1": 416,
+     "obj": "trolley",
+     "from": [
+      -9.0,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -8.455,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 416,
+     "f1": 422,
+     "obj": "trolley",
+     "from": [
+      -8.455,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -7.909,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 422,
+     "f1": 428,
+     "obj": "trolley",
+     "from": [
+      -7.909,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -7.364,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 428,
+     "f1": 434,
+     "obj": "trolley",
+     "from": [
+      -7.364,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -6.818,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 434,
+     "f1": 440,
+     "obj": "trolley",
+     "from": [
+      -6.818,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -6.273,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 440,
+     "f1": 447,
+     "obj": "trolley",
+     "from": [
+      -6.273,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -5.727,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 447,
+     "f1": 453,
+     "obj": "trolley",
+     "from": [
+      -5.727,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -5.182,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 453,
+     "f1": 459,
+     "obj": "trolley",
+     "from": [
+      -5.182,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -4.636,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 459,
+     "f1": 465,
+     "obj": "trolley",
+     "from": [
+      -4.636,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -4.091,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 465,
+     "f1": 471,
+     "obj": "trolley",
+     "from": [
+      -4.091,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -3.545,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 471,
+     "f1": 478,
+     "obj": "trolley",
+     "from": [
+      -3.545,
+      4.4,
+      0.12
+     ],
+     "to": [
+      -3.0,
+      4.4,
+      0.12
+     ]
+    },
+    {
+     "f0": 500,
+     "f1": 501,
+     "obj": "trolley",
+     "from": [
+      -3,
+      4.4,
+      0.12
+     ],
+     "to": [
+      2.3,
+      0.2,
+      0
+     ]
+    },
+    {
+     "f0": 549,
+     "f1": 561,
+     "obj": "lever1",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 551,
+     "f1": 596,
+     "obj": "train",
+     "from": -70,
+     "to": 0.0
+    },
+    {
+     "f0": 564,
+     "f1": 580,
+     "obj": "signal_arm",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 711,
+     "f1": 735,
+     "obj": "train",
+     "from": 0.0,
+     "to": 6.8
+    },
+    {
+     "f0": 716,
+     "f1": 717,
+     "obj": "lever1",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 809,
+     "f1": 821,
+     "obj": "lever5",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 879,
+     "f1": 880,
+     "obj": "lever5",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 978,
+     "f1": 1032,
+     "obj": "train",
+     "from": 6.8,
+     "to": 95
+    },
+    {
+     "f0": 1301,
+     "f1": 1353,
+     "obj": "train",
+     "from": -60,
+     "to": 95
+    },
+    {
+     "f0": 1358,
+     "f1": 1404,
+     "obj": "train",
+     "from": -60,
+     "to": 95
+    },
+    {
+     "f0": 1407,
+     "f1": 1467,
+     "obj": "train",
+     "from": -60,
+     "to": 95
+    },
+    {
+     "f0": 1455,
+     "f1": 1467,
+     "obj": "lever1",
+     "from": 0,
+     "to": 1
+    },
+    {
+     "f0": 1466,
+     "f1": 1480,
+     "obj": "signal_arm",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 1472,
+     "f1": 1532,
+     "obj": "train",
+     "from": -60,
+     "to": 95
+    },
+    {
+     "f0": 1544,
+     "f1": 1636,
+     "obj": "train",
+     "from": -45,
+     "to": 95
+    },
+    {
+     "f0": 1695,
+     "f1": 1740,
+     "obj": "train",
+     "from": -70,
+     "to": -16
+    },
+    {
+     "f0": 1963,
+     "f1": 1964,
+     "obj": "lever1",
+     "from": 1,
+     "to": 0
+    },
+    {
+     "f0": 1963,
+     "f1": 1964,
+     "obj": "train",
+     "from": -16,
+     "to": -70
+    }
+   ]
+  },
+  "office": {
+   "set": "office",
+   "light": "interior",
+   "backdrop": 5,
+   "events": [
+    {
+     "f0": 2043,
+     "f1": 2055,
+     "obj": "stamp",
+     "from": 0,
+     "to": 1
+    }
+   ]
+  }
+ },
+ "props": {
+  "key": {
+   "held_by": "jack"
+  },
+  "coin": {
+   "held_by": "jack"
+  },
+  "bottle": {
+   "held_by": "jack"
+  },
+  "letter_held": {
+   "held_by": "wide"
+  },
+  "notebook": {
+   "held_by": "inspector"
+  },
+  "letters": {
+   "pos": [
+    -1.4,
+    3.2,
+    1.2
+   ],
+   "h": 1.3,
+   "kind": "paper letters fluttering out of the carriage windows (fx)"
+  },
+  "carriage": {
+   "pos": [
+    -0.6,
+    3.3,
+    0
+   ],
+   "h": 2.0,
+   "kind": "carriage 1 of the train mover (set)"
+  },
+  "tracks": {
+   "pos": [
+    -5,
+    4.4,
+    0
+   ],
+   "h": 0.3,
+   "kind": "main line and branch at the points (set)"
+  }
+ },
+ "takes": [
+  {
+   "id": "t1",
+   "place": "junction",
+   "stations": [
+    {
+     "at": 0,
+     "pos": [
+      2.2,
+      -2.6,
+      2.4
+     ],
+     "aim": [
+      0.05,
+      0.7,
+      0.75
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "signal"
+     ],
+     "hold": 0.1
+    },
+    {
+     "at": 34,
+     "pos": [
+      1.5,
+      -1.0,
+      0.3
+     ],
+     "aim": [
+      0.02,
+      0.6,
+      0.85
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "signal"
+     ],
+     "hold": 1.2,
+     "creep": 0.003
+    },
+    {
+     "at": [
+      "never",
+      1
+     ],
+     "pos": [
+      -0.25,
+      -0.78,
+      0.55
+     ],
+     "aim": [
+      -0.6,
+      0.35,
+      0.56
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [
+      "levers"
+     ],
+     "word": "never",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "owner",
+      1
+     ],
+     "pos": [
+      2.7,
+      -2.1,
+      0.6
+     ],
+     "aim": [
+      2.3,
+      0.2,
+      1.05
+     ],
+     "lens": 24,
+     "subject": "wide",
+     "framing": "W",
+     "shows": [
+      "trolley"
+     ],
+     "word": "owner",
+     "hold": 0.6
+    },
+    {
+     "at": [
+      "reach",
+      1
+     ],
+     "pos": [
+      3.0,
+      -1.0,
+      1.05
+     ],
+     "aim": [
+      2.12,
+      0.3,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "wide",
+     "framing": "M",
+     "shows": [
+      "levers"
+     ],
+     "word": "reach",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "baboon",
+      1
+     ],
+     "pos": [
+      2.0,
+      -2.2,
+      0.5
+     ],
+     "aim": [
+      1.62,
+      -0.1,
+      0.72
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "wide",
+      "coin",
+      "trolley"
+     ],
+     "word": "baboon",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "jack",
+      1
+     ],
+     "pos": [
+      2.3,
+      -1.55,
+      0.6
+     ],
+     "aim": [
+      1.5,
+      -0.7,
+      0.54
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [],
+     "word": "Jack",
+     "hold": 0.6
+    },
+    {
+     "at": [
+      "pushes",
+      1
+     ],
+     "pos": [
+      -7.0,
+      3.5,
+      0.45
+     ],
+     "aim": [
+      -9.35,
+      4.1,
+      0.9
+     ],
+     "lens": 24,
+     "subject": "wide",
+     "framing": "W",
+     "shows": [
+      "jack",
+      "trolley",
+      "rails"
+     ],
+     "word": "pushes",
+     "follow": "wide",
+     "hold": 0.5
+    }
+   ],
+   "rigs": [
+    {
+     "beat": [
+      "toots",
+      1
+     ],
+     "action": "train arrives and stops (seen)",
+     "subject_path": "object_path of the train mover, cab -70 -> 0.0 on the main line",
+     "recipe": "catch from the lever frame: the camera rises from Jack's eye height and tilts up as the engine slides in behind the levers; whistle steam on the word; no kick (it stops, it does not hit)"
+    },
+    {
+     "beat": [
+      "train",
+      4
+     ],
+     "action": "pass 1 of 'train after train' (seen, going away east)",
+     "subject_path": "object_path of the train, -60 -> 95",
+     "recipe": "the camera holds the three-shot low beside Jack; the train enters over the left shoulder 5 m away and recedes up the frame (follow-away, no pan); kick 7 f amp 1.2 on 'train'; motion blur on the train only"
+    },
+    {
+     "beat": [
+      "two",
+      1
+     ],
+     "action": "pass 2 behind Jack (seen)",
+     "subject_path": "object_path of the train, -60 -> 95",
+     "recipe": "static medium on Jack and his lever; the train fills the top of the frame behind him for about 12 f; kick amp 1.5 on 'toots'; flash of whistle steam; Jack does not react"
+    },
+    {
+     "beat": [
+      "four",
+      1
+     ],
+     "action": "pass 3 behind Jack (seen)",
+     "subject_path": "object_path of the train, -60 -> 95",
+     "recipe": "static medium on Jack and the key; same as pass 2, kick on 'toots'; the slow creep toward Jack's face keeps going through the pass: the camera does not look up"
+    },
+    {
+     "beat": [
+      "last",
+      1
+     ],
+     "action": "the last train; the camera leaves its post",
+     "subject_path": "object_path of the train, -45 -> 95",
+     "recipe": "chase: the camera lets the engine overtake at Jack's shoulder, then runs east beside the wheels 1 m up for 14 m (the travel into 'checking', 2.3 s), carriages streaming past on the left; catch: it slows to a stop on the boardwalk and turns back to find the inspector; kick amp 2.5 on 'up' as the engine passes the lens"
+    },
+    {
+     "beat": [
+      "driver",
+      2
+     ],
+     "action": "a train comes up the main line and stops before the points (seen from above)",
+     "subject_path": "object_path of the train, -70 -> -16",
+     "recipe": "crane: the camera is already high over the boardwalk (rise on 'see'); it holds while the train comes toward it, 2 whistle puffs on 'whistled' and on 'times'; then a forward glide to the high view of both tracks on 'track'"
+    },
+    {
+     "beat": [
+      "train",
+      1
+     ],
+     "action": "'lost both his legs under a train' (heard, not seen)",
+     "subject_path": "point: the signalman in his trolley",
+     "recipe": "kick 7 f amp 1.5 and a red flash <= 2 f on 'train'; no train moves"
+    }
+   ]
+  },
+  {
+   "id": "t1b",
+   "place": "junction",
+   "stations": [
+    {
+     "at": 500,
+     "pos": [
+      -4.0,
+      -0.95,
+      0.6
+     ],
+     "aim": [
+      -1.3,
+      0.5,
+      0.75
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "signal"
+     ],
+     "hold": 0.3
+    },
+    {
+     "at": [
+      "pulling",
+      1
+     ],
+     "pos": [
+      -3.0,
+      -0.5,
+      0.3
+     ],
+     "aim": [
+      -1.2,
+      0.42,
+      0.85
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "signal"
+     ],
+     "word": "pulling",
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "toots",
+      1
+     ],
+     "pos": [
+      0.45,
+      -0.9,
+      1.4
+     ],
+     "aim": [
+      0.0,
+      3.3,
+      2.3
+     ],
+     "lens": 24,
+     "subject": "driver",
+     "framing": "P",
+     "shows": [
+      "train"
+     ],
+     "word": "toots",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "key",
+      1
+     ],
+     "pos": [
+      0.05,
+      -0.45,
+      0.6
+     ],
+     "aim": [
+      0.8,
+      0.7,
+      0.58
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [
+      "key",
+      "keys"
+     ],
+     "word": "key",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "driver",
+      1
+     ],
+     "pos": [
+      0.55,
+      -0.7,
+      1.1
+     ],
+     "aim": [
+      0.35,
+      3.0,
+      1.75
+     ],
+     "lens": 32,
+     "subject": "driver",
+     "framing": "W",
+     "shows": [
+      "jack",
+      "key",
+      "train"
+     ],
+     "word": "driver",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "lady",
+      1
+     ],
+     "pos": [
+      1.2,
+      -1.5,
+      0.5
+     ],
+     "aim": [
+      -0.05,
+      1.6,
+      0.95
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "lady",
+      "window",
+      "levers"
+     ],
+     "word": "lady",
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "baboon",
+      2
+     ],
+     "pos": [
+      1.85,
+      -1.0,
+      0.35
+     ],
+     "aim": [
+      -0.3,
+      0.8,
+      1.0
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "lady",
+      "window",
+      "levers"
+     ],
+     "word": "baboon",
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "screams",
+      1
+     ],
+     "pos": [
+      -0.8,
+      1.5,
+      2.0
+     ],
+     "aim": [
+      -0.6,
+      4.0,
+      2.6
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "M",
+     "shows": [
+      "window"
+     ],
+     "word": "screams",
+     "lead": 3,
+     "hold": 0.6,
+     "travel": 0.6
+    },
+    {
+     "at": [
+      "carriage",
+      1
+     ],
+     "pos": [
+      -2.3,
+      -0.5,
+      1.7
+     ],
+     "aim": [
+      -0.9,
+      3.3,
+      2.35
+     ],
+     "lens": 24,
+     "subject": "lady",
+     "framing": "P",
+     "shows": [
+      "window",
+      "carriage",
+      "letters"
+     ],
+     "word": "carriage",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "inspector",
+      1
+     ],
+     "pos": [
+      -1.75,
+      -0.5,
+      0.3
+     ],
+     "aim": [
+      0.27,
+      0.36,
+      0.87
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "W",
+     "shows": [
+      "jack",
+      "wide"
+     ],
+     "word": "inspector",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "baboon",
+      3
+     ],
+     "pos": [
+      -0.75,
+      -1.25,
+      0.6
+     ],
+     "aim": [
+      0.12,
+      0.38,
+      0.8
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "M",
+     "shows": [
+      "jack"
+     ],
+     "word": "baboon",
+     "travel": 0.9,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "signalman",
+      2
+     ],
+     "pos": [
+      0.3,
+      -1.6,
+      0.9
+     ],
+     "aim": [
+      1.8,
+      0.15,
+      1.5
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "M",
+     "shows": [
+      "wide"
+     ],
+     "word": "signalman",
+     "travel": 0.6,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "monkey",
+      1
+     ],
+     "pos": [
+      0.45,
+      -1.55,
+      0.5
+     ],
+     "aim": [
+      1.2,
+      -0.5,
+      0.95
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "C",
+     "shows": [
+      "wide"
+     ],
+     "word": "monkey",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "smiles",
+      1
+     ],
+     "pos": [
+      3.0,
+      -1.1,
+      1.4
+     ],
+     "aim": [
+      2.3,
+      0.2,
+      1.45
+     ],
+     "lens": 24,
+     "subject": "wide",
+     "framing": "M",
+     "shows": [
+      "inspector"
+     ],
+     "word": "smiles",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "inspector",
+      2
+     ],
+     "pos": [
+      2.7,
+      -2.1,
+      1.4
+     ],
+     "aim": [
+      0.0,
+      1.3,
+      0.9
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "W",
+     "shows": [
+      "jack",
+      "train"
+     ],
+     "word": "inspector",
+     "travel": 0.95,
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "trick",
+      1
+     ],
+     "pos": [
+      -3.5,
+      -0.85,
+      0.4
+     ],
+     "aim": [
+      -1.2,
+      0.6,
+      0.72
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "train"
+     ],
+     "word": "trick",
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "lever",
+      1
+     ],
+     "pos": [
+      -3.0,
+      -0.5,
+      0.3
+     ],
+     "aim": [
+      -1.2,
+      0.42,
+      0.85
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [
+      "lever",
+      "levers",
+      "train"
+     ],
+     "word": "lever",
+     "creep": 0.003,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "key",
+      2
+     ],
+     "pos": [
+      0.05,
+      -0.45,
+      0.6
+     ],
+     "aim": [
+      0.8,
+      0.7,
+      0.58
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [
+      "key",
+      "keys",
+      "train"
+     ],
+     "word": "key",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "inspector",
+      3
+     ],
+     "pos": [
+      14.1,
+      -0.9,
+      0.5
+     ],
+     "aim": [
+      13.2,
+      0.3,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "W",
+     "shows": [
+      "notebook",
+      "train"
+     ],
+     "word": "inspector",
+     "via": [
+      [
+       7.0,
+       -1.3,
+       0.9
+      ]
+     ],
+     "travel": 1.7,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "see",
+      1
+     ],
+     "pos": [
+      15.3,
+      -2.3,
+      3.6
+     ],
+     "aim": [
+      5.5,
+      5.2,
+      1.6
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "P",
+     "shows": [
+      "train",
+      "junction"
+     ],
+     "word": "see",
+     "lead": 2,
+     "travel": 1.0,
+     "drift": [
+      0.3,
+      0.5,
+      0.25
+     ],
+     "drift_aim": 1,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "track",
+      1
+     ],
+     "pos": [
+      0.8,
+      3.6,
+      3.2
+     ],
+     "aim": [
+      -6.0,
+      4.6,
+      0.4
+     ],
+     "lens": 24,
+     "subject": "train",
+     "framing": "P",
+     "shows": [
+      "points",
+      "tracks"
+     ],
+     "word": "track",
+     "via": [
+      [
+       6.5,
+       1.2,
+       3.8
+      ]
+     ],
+     "drift": [
+      -0.1,
+      -0.7,
+      0.0
+     ],
+     "drift_aim": 1,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "knock",
+      1
+     ],
+     "pos": [
+      3.4,
+      -1.2,
+      1.35
+     ],
+     "aim": [
+      2.25,
+      0.3,
+      1.5
+     ],
+     "lens": 24,
+     "subject": "wide",
+     "framing": "M",
+     "shows": [
+      "hut"
+     ],
+     "word": "knock",
+     "hold": 0.5,
+     "via": [
+      [
+       0.5,
+       0.7,
+       2.3
+      ]
+     ]
+    },
+    {
+     "at": [
+      "jack",
+      6
+     ],
+     "pos": [
+      0.5,
+      -0.65,
+      0.45
+     ],
+     "aim": [
+      -0.6,
+      0.35,
+      0.54
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers"
+     ],
+     "word": "Jack",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "listening",
+      1
+     ],
+     "pos": [
+      -0.3,
+      -0.6,
+      0.6
+     ],
+     "aim": [
+      -0.6,
+      0.35,
+      0.56
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "C",
+     "shows": [],
+     "word": "listening",
+     "hold": 0.5
+    }
+   ],
+   "cut_in": "hidden: time passes. A wall calendar drops over the frame on 'by the end of the month', its days flip to 30, the last page tears away on the lever frame"
+  },
+  {
+   "id": "t2",
+   "place": "office",
+   "stations": [
+    {
+     "at": [
+      "inspector",
+      4
+     ],
+     "pos": [
+      -0.2,
+      -1.0,
+      1.0
+     ],
+     "aim": [
+      -0.7,
+      0.55,
+      1.35
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "W",
+     "shows": [
+      "desk"
+     ],
+     "word": "inspector",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "writes",
+      2
+     ],
+     "pos": [
+      -1.5,
+      -0.8,
+      1.3
+     ],
+     "aim": [
+      -0.3,
+      0.7,
+      1.2
+     ],
+     "lens": 24,
+     "subject": "inspector",
+     "framing": "M",
+     "shows": [
+      "letter",
+      "stamp"
+     ],
+     "word": "writes",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "sent",
+      1
+     ],
+     "pos": [
+      0.02,
+      0.35,
+      1.12
+     ],
+     "aim": [
+      0.15,
+      0.75,
+      0.77
+     ],
+     "lens": 35,
+     "subject": "letter",
+     "framing": "O",
+     "shows": [
+      "letter"
+     ],
+     "word": "sent",
+     "creep": 0.008,
+     "hold": 0.5,
+     "travel": 1.5
+    }
+   ],
+   "cut_in": "hidden: whistle steam whites out the frame for 4 f on each side of the cut (the inspector leaves by train)"
+  },
+  {
+   "id": "t3",
+   "place": "junction",
+   "stations": [
+    {
+     "at": 2104,
+     "pos": [
+      1.96,
+      -0.3,
+      1.27
+     ],
+     "aim": [
+      1.93,
+      0.2,
+      1.3
+     ],
+     "lens": 24,
+     "subject": "letter",
+     "framing": "O",
+     "shows": [
+      "letter",
+      "wide"
+     ],
+     "hold": 0.0
+    },
+    {
+     "at": [
+      "cents",
+      1
+     ],
+     "pos": [
+      2.0,
+      -2.2,
+      0.5
+     ],
+     "aim": [
+      1.62,
+      -0.1,
+      0.72
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "wide",
+      "letter",
+      "coin"
+     ],
+     "word": "cents",
+     "travel": 0.8,
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "beer",
+      1
+     ],
+     "pos": [
+      2.3,
+      -1.55,
+      0.6
+     ],
+     "aim": [
+      1.5,
+      -0.7,
+      0.54
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "M",
+     "shows": [
+      "bottle"
+     ],
+     "word": "beer",
+     "hold": 0.5
+    },
+    {
+     "at": [
+      "never",
+      2
+     ],
+     "pos": [
+      0,
+      0,
+      0
+     ],
+     "aim": [
+      0,
+      0,
+      0
+     ],
+     "lens": 24,
+     "subject": "jack",
+     "framing": "W",
+     "shows": [
+      "levers",
+      "signal"
+     ],
+     "word": "never",
+     "loop": true,
+     "travel": 1.3,
+     "travel_roll": 4,
+     "hold": 0.5
+    }
+   ],
+   "cut_in": "hidden: through the story object. The office take ends pushed into the cream letter on the desk; this take starts on the same letter in the signalman's hand and pulls back"
+  }
+ ],
+ "kicks": [
+  {
+   "at": [
+    "train",
+    1
+   ],
+   "amp": 1.5
+  },
+  {
+   "at": [
+    "screams",
+    1
+   ],
+   "amp": 2.0
+  },
+  {
+   "at": [
+    "train",
+    4,
+    8
+   ],
+   "amp": 1.2
+  },
+  {
+   "at": [
+    "toots",
+    2
+   ],
+   "amp": 1.5
+  },
+  {
+   "at": [
+    "toots",
+    3
+   ],
+   "amp": 1.5
+  },
+  {
+   "at": [
+    "up",
+    4
+   ],
+   "amp": 2.5
+  },
+  {
+   "at": [
+    "letter",
+    1
+   ],
+   "amp": 1.5
+  }
+ ],
+ "solids": [
+  {
+   "name": "lever1",
+   "place": "junction",
+   "pivot": [
+    -1.4,
+    0.9,
+    0.1
+   ],
+   "len": 1.15,
+   "lean_deg": [
+    -8,
+    20
+   ],
+   "obj": "lever1",
+   "r": 0.04
+  },
+  {
+   "name": "lever2",
+   "place": "junction",
+   "pivot": [
+    -1.0,
+    0.9,
+    0.1
+   ],
+   "len": 1.15,
+   "lean_deg": [
+    -8,
+    20
+   ],
+   "obj": "lever2",
+   "r": 0.04
+  },
+  {
+   "name": "lever3",
+   "place": "junction",
+   "pivot": [
+    -0.6,
+    0.9,
+    0.1
+   ],
+   "len": 1.15,
+   "lean_deg": [
+    -8,
+    20
+   ],
+   "obj": "lever3",
+   "r": 0.04
+  },
+  {
+   "name": "lever4",
+   "place": "junction",
+   "pivot": [
+    -0.2,
+    0.9,
+    0.1
+   ],
+   "len": 1.15,
+   "lean_deg": [
+    -8,
+    20
+   ],
+   "obj": "lever4",
+   "r": 0.04
+  },
+  {
+   "name": "lever5",
+   "place": "junction",
+   "pivot": [
+    0.2,
+    0.9,
+    0.1
+   ],
+   "len": 1.15,
+   "lean_deg": [
+    -8,
+    20
+   ],
+   "obj": "lever5",
+   "r": 0.04
+  },
+  {
+   "name": "lamp_post",
+   "place": "junction",
+   "seg": [
+    [
+     0.78,
+     1.75,
+     0
+    ],
+    [
+     0.78,
+     1.75,
+     2.4
+    ]
+   ],
+   "r": 0.05
+  },
+  {
+   "name": "key_board_post",
+   "place": "junction",
+   "seg": [
+    [
+     1.25,
+     1.1,
+     0
+    ],
+    [
+     1.25,
+     1.1,
+     1.0
+    ]
+   ],
+   "r": 0.05
+  }
+ ],
+ "transitions": [
+  {
+   "at": 385,
+   "kind": "wheel",
+   "from": "trolley",
+   "to": "trolley",
+   "frames": 18
+  },
+  {
+   "at": 500,
+   "kind": "calendar",
+   "frames": 30,
+   "days": 30
+  },
+  {
+   "at": 716,
+   "kind": "steam",
+   "frames": 16
+  },
+  {
+   "at": 1963,
+   "kind": "steam",
+   "frames": 14
+  },
+  {
+   "at": 2104,
+   "kind": "match",
+   "from": "letter",
+   "from_size": [
+    0.3,
+    0.21
+   ],
+   "to": [
+    1.93,
+    0.2,
+    1.3
+   ],
+   "to_size": [
+    0.29,
+    0.37
+   ],
+   "to_rot": -8,
+   "frames": 24
+  }
+ ],
+ "highlights": [
+  {
+   "at": 2,
+   "on": "lever5",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.4
+  },
+  {
+   "at": 36,
+   "on": "signal_arm",
+   "color": [
+    "#ff3b30",
+    "#ffe14a"
+   ],
+   "s": 1.0
+  },
+  {
+   "at": [
+    "rails",
+    1,
+    -8
+   ],
+   "on": "/^rail(_head)?(_\\d+)?$/",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.7,
+   "glow": false
+  },
+  {
+   "at": [
+    "pulling",
+    1,
+    2
+   ],
+   "on": "lever1",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.4
+  },
+  {
+   "at": [
+    "right",
+    1
+   ],
+   "on": "/^key_(ring|shaft|bit)/",
+   "color": [
+    "#ffb300",
+    "#ffe14a",
+    "#fff6c2"
+   ],
+   "s": 1.4,
+   "glow_on": "keys",
+   "size": 0.8,
+   "bloom": 0.4
+  },
+  {
+   "at": [
+    "window",
+    1,
+    -4
+   ],
+   "on": "/^carriage_window_trim/",
+   "color": [
+    "#3b82f6",
+    "#9ad0ff"
+   ],
+   "s": 1.3,
+   "glow": false
+  },
+  {
+   "at": [
+    "baboon",
+    2
+   ],
+   "on": "lever5",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.4
+  },
+  {
+   "at": [
+    "send",
+    1
+   ],
+   "on": "signal_arm",
+   "color": [
+    "#3bff7a",
+    "#ffffff"
+   ],
+   "s": 1.2
+  },
+  {
+   "at": [
+    "train",
+    4,
+    -4
+   ],
+   "on": "/^rail(_head)?(_\\d+)?$/",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.9,
+   "glow": false
+  },
+  {
+   "at": [
+    "throws",
+    1,
+    4
+   ],
+   "on": "lever1",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.3
+  },
+  {
+   "at": [
+    "right",
+    2
+   ],
+   "on": "/^key_(ring|shaft|bit)/",
+   "color": [
+    "#ffb300",
+    "#ffe14a",
+    "#fff6c2"
+   ],
+   "s": 1.4,
+   "glow_on": "keys",
+   "size": 0.8,
+   "bloom": 0.4
+  },
+  {
+   "at": [
+    "checking",
+    1
+   ],
+   "on": "inspector",
+   "color": [
+    "#9a4bff",
+    "#b04bff",
+    "#e0405a"
+   ],
+   "s": 2.0,
+   "card": 0.8
+  },
+  {
+   "at": [
+    "whistled",
+    1
+   ],
+   "on": "/^rail(_head)?(_\\d+)?$/",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4"
+   ],
+   "s": 1.6,
+   "glow": false
+  },
+  {
+   "at": [
+    "every",
+    3
+   ],
+   "on": "/^branch_rail/",
+   "color": [
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.6,
+   "glow": false
+  },
+  {
+   "at": [
+    "letter",
+    1,
+    2
+   ],
+   "on": "letter",
+   "color": [
+    "#ffb300",
+    "#ffe14a",
+    "#fff6c2"
+   ],
+   "s": 1.6,
+   "size": 0.4,
+   "bloom": 0.35
+  },
+  {
+   "at": [
+    "hired",
+    1
+   ],
+   "on": [],
+   "color": [
+    "#ffb300",
+    "#ffe14a",
+    "#fff6c2"
+   ],
+   "s": 1.2,
+   "pos": [
+    1.93,
+    0.2,
+    1.3
+   ],
+   "flare": true,
+   "size": 1.2
+  },
+  {
+   "at": [
+    "cents",
+    1
+   ],
+   "on": [],
+   "color": [
+    "#ffb300",
+    "#ffe14a",
+    "#fff6c2"
+   ],
+   "s": 1.0,
+   "glow_on": "coin",
+   "flare": true
+  },
+  {
+   "at": [
+    "beer",
+    1,
+    -6
+   ],
+   "on": [],
+   "color": [
+    "#ffb300",
+    "#fff6c2"
+   ],
+   "s": 1.1,
+   "pos": [
+    1.7,
+    -0.51,
+    0.72
+   ],
+   "flare": true
+  },
+  {
+   "at": [
+    "single",
+    3,
+    4
+   ],
+   "on": "lever5",
+   "color": [
+    "#8e3bff",
+    "#ff3bd4",
+    "#ff7ab8",
+    "#ffe14a",
+    "#ffffff"
+   ],
+   "s": 1.0
+  }
+ ],
+ "acts": [
+  {
+   "who": "jack",
+   "at": 0,
+   "pos": [
+    -0.059,
+    0.719,
+    0.35
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "hang_s0",
+   "face": "k:angry",
+   "cling": "lever5"
+  },
+  {
+   "who": "jack",
+   "at": 10,
+   "pose": "hang_s1"
+  },
+  {
+   "who": "jack",
+   "at": 20,
+   "pose": "hang_s0"
+  },
+  {
+   "who": "jack",
+   "at": 22,
+   "pos": [
+    -0.006,
+    0.131,
+    0.3
+   ],
+   "move_s": 0.4666666666666667
+  },
+  {
+   "who": "jack",
+   "at": 40,
+   "pos": [
+    -0.006,
+    0.131,
+    0
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "crouch",
+   "cling": null
+  },
+  {
+   "who": "jack",
+   "at": 52,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "jack",
+   "at": 70,
+   "pos": [
+    -0.6,
+    0.35,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.7333333333333333
+  },
+  {
+   "who": "jack",
+   "at": [
+    "never",
+    1,
+    -4
+   ],
+   "pose": "shrug",
+   "face": "k:smirk"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "his",
+    1,
+    -6
+   ],
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "jack",
+   "at": 276,
+   "pos": [
+    1.5,
+    -0.7,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.9333333333333333,
+   "look": "wide"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "calls",
+    1
+   ],
+   "pose": "hands_hips",
+   "face": "k:happy"
+  },
+  {
+   "who": "jack",
+   "at": 384,
+   "pos": [
+    -9.75,
+    3.5,
+    0.12
+   ],
+   "move_s": 0.03333333333333333,
+   "pose": "stand",
+   "face": "standard",
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": 409,
+   "pos": [
+    -3.75,
+    3.5,
+    0.12
+   ],
+   "walk": true,
+   "move_s": 2.2666666666666666,
+   "walk_pose": "push"
+  },
+  {
+   "who": "jack",
+   "at": 499,
+   "pos": [
+    -2.5,
+    0.75,
+    0
+   ],
+   "move_s": 0.03333333333333333,
+   "walk_pose": null
+  },
+  {
+   "who": "jack",
+   "at": 496,
+   "pos": [
+    -1.227,
+    0.668,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.8
+  },
+  {
+   "who": "jack",
+   "at": 541,
+   "pos": [
+    -1.227,
+    0.668,
+    0.35
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "hang_s0",
+   "view": "front",
+   "dir": -1,
+   "look": null,
+   "cling": "lever1"
+  },
+  {
+   "who": "jack",
+   "at": 549,
+   "pos": [
+    -1.313,
+    0.087,
+    0.3
+   ],
+   "move_s": 0.4
+  },
+  {
+   "who": "jack",
+   "at": 554,
+   "pose": "hang_s1"
+  },
+  {
+   "who": "jack",
+   "at": 564,
+   "pose": "hang_s0"
+  },
+  {
+   "who": "jack",
+   "at": 575,
+   "pos": [
+    -1.313,
+    0.087,
+    0
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "crouch",
+   "cling": null
+  },
+  {
+   "who": "jack",
+   "at": 587,
+   "pose": "stand"
+  },
+  {
+   "who": "jack",
+   "at": 614,
+   "pos": [
+    0.8,
+    0.7,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.6666666666666666,
+   "look": [
+    1.25,
+    1.0,
+    0
+   ]
+  },
+  {
+   "who": "jack",
+   "at": [
+    "grabs",
+    1
+   ],
+   "pose": "reach_up"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "key",
+    1
+   ],
+   "pose": "hold_up",
+   "prop": "key",
+   "hand": "L"
+  },
+  {
+   "who": "jack",
+   "at": 668,
+   "pos": [
+    0.15,
+    2.55,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.6666666666666666,
+   "look": [
+    0.0,
+    4.0,
+    1.0
+   ]
+  },
+  {
+   "who": "jack",
+   "at": [
+    "driver",
+    1,
+    10
+   ],
+   "pose": "stand",
+   "prop": null,
+   "hand": null
+  },
+  {
+   "who": "jack",
+   "at": 716,
+   "pos": [
+    0.95,
+    0.2,
+    0
+   ],
+   "move_s": 0.03333333333333333,
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": 749,
+   "pos": [
+    -0.02,
+    0.692,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.8666666666666667,
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": 801,
+   "pos": [
+    -0.02,
+    0.692,
+    0.35
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "hang_s0",
+   "view": "front",
+   "dir": 1,
+   "look": null,
+   "cling": "lever5"
+  },
+  {
+   "who": "jack",
+   "at": 809,
+   "pos": [
+    0.04,
+    0.109,
+    0.3
+   ],
+   "move_s": 0.4
+  },
+  {
+   "who": "jack",
+   "at": 814,
+   "pose": "hang_s1"
+  },
+  {
+   "who": "jack",
+   "at": 824,
+   "pose": "hang_s0"
+  },
+  {
+   "who": "jack",
+   "at": 835,
+   "pos": [
+    0.04,
+    0.109,
+    0
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "crouch",
+   "cling": null
+  },
+  {
+   "who": "jack",
+   "at": 847,
+   "pose": "stand"
+  },
+  {
+   "who": "jack",
+   "at": 881,
+   "pos": [
+    -0.25,
+    0.15,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.4666666666666667,
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": [
+    "shows",
+    1,
+    6
+   ],
+   "look": "inspector"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "looks",
+    2
+   ],
+   "pose": "cool"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "you've",
+    1,
+    -4
+   ],
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": 1288,
+   "pos": [
+    -1.227,
+    0.668,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.6666666666666666
+  },
+  {
+   "who": "jack",
+   "at": [
+    "sends",
+    1,
+    8
+   ],
+   "pose": "stand"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "whistles",
+    1
+   ],
+   "pose": "tiltR"
+  },
+  {
+   "who": "jack",
+   "at": 1447,
+   "pos": [
+    -1.227,
+    0.668,
+    0.35
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "hang_s0",
+   "view": "front",
+   "dir": -1,
+   "look": null,
+   "cling": "lever1"
+  },
+  {
+   "who": "jack",
+   "at": 1455,
+   "pos": [
+    -1.313,
+    0.087,
+    0.3
+   ],
+   "move_s": 0.4
+  },
+  {
+   "who": "jack",
+   "at": 1460,
+   "pose": "hang_s1"
+  },
+  {
+   "who": "jack",
+   "at": 1470,
+   "pose": "hang_s0"
+  },
+  {
+   "who": "jack",
+   "at": 1475,
+   "pos": [
+    -1.313,
+    0.087,
+    0
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "crouch",
+   "cling": null
+  },
+  {
+   "who": "jack",
+   "at": 1486,
+   "pos": [
+    0.8,
+    0.7,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.7333333333333333,
+   "look": [
+    1.25,
+    1.0,
+    0
+   ],
+   "pose": "reach_up"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "key",
+    2
+   ],
+   "pose": "hold_up",
+   "prop": "key",
+   "hand": "L",
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": [
+    "doesn't",
+    1
+   ],
+   "face": "k:smug"
+  },
+  {
+   "who": "jack",
+   "at": 1591,
+   "pos": [
+    -0.6,
+    0.35,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.5333333333333333,
+   "pose": "stand",
+   "prop": null,
+   "hand": null,
+   "face": "standard",
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": [
+    "driver",
+    2
+   ],
+   "pose": "tiltL"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "track",
+    1
+   ],
+   "pose": "stand"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "knock",
+    1
+   ],
+   "pose": "tiltL"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "jack",
+    6,
+    -6
+   ],
+   "pose": "stand"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "learned",
+    1
+   ],
+   "pose": "tiltR"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "listening",
+    1
+   ],
+   "face": "k:happy"
+  },
+  {
+   "who": "jack",
+   "at": 1963,
+   "visible": false
+  },
+  {
+   "who": "jack",
+   "at": 1965,
+   "pos": [
+    1.5,
+    -0.7,
+    0
+   ],
+   "move_s": 0.03333333333333333,
+   "face": "standard",
+   "pose": "stand",
+   "look": "wide"
+  },
+  {
+   "who": "jack",
+   "at": 2104,
+   "visible": true
+  },
+  {
+   "who": "jack",
+   "at": [
+    "hired",
+    1
+   ],
+   "face": "k:happy"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "cents",
+    1
+   ],
+   "pose": "hold_out",
+   "prop": "coin",
+   "hand": "R"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "bottle",
+    1
+   ],
+   "pose": "hold_up",
+   "prop": "bottle",
+   "hand": "L"
+  },
+  {
+   "who": "jack",
+   "at": 2241,
+   "pos": [
+    -0.059,
+    0.31899999999999995,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.7333333333333333,
+   "pose": "stand",
+   "prop": null,
+   "hand": null,
+   "face": "standard",
+   "look": null
+  },
+  {
+   "who": "jack",
+   "at": [
+    "single",
+    3,
+    -8
+   ],
+   "pose": "crouch"
+  },
+  {
+   "who": "jack",
+   "at": [
+    "single",
+    3,
+    2
+   ],
+   "pos": [
+    -0.059,
+    0.719,
+    0.35
+   ],
+   "move_s": 0.16666666666666666,
+   "pose": "hang_s0",
+   "view": "front",
+   "dir": 1,
+   "face": "k:angry",
+   "cling": "lever5"
+  },
+  {
+   "who": "wide",
+   "at": 0,
+   "pos": [
+    2.3,
+    0.2,
+    0.42
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "sit",
+   "face": "standard"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "lost",
+    1,
+    -2
+   ],
+   "pose": "sit+tiltL",
+   "face": "k:sad"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "can't",
+    1
+   ],
+   "pose": "sit+reach_up",
+   "look": [
+    0.6,
+    -1.4,
+    1.0
+   ]
+  },
+  {
+   "who": "wide",
+   "at": [
+    "so",
+    2
+   ],
+   "pose": "sit",
+   "face": "standard",
+   "look": null
+  },
+  {
+   "who": "wide",
+   "at": [
+    "buys",
+    1
+   ],
+   "pose": "sit+hold_out",
+   "prop": "coin",
+   "hand": "R",
+   "look": "jack"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "calls",
+    1
+   ],
+   "pose": "sit",
+   "prop": null,
+   "hand": null,
+   "face": "k:happy"
+  },
+  {
+   "who": "wide",
+   "at": 384,
+   "pos": [
+    -9,
+    4.4,
+    0.71
+   ],
+   "move_s": 0.03333333333333333,
+   "pose": "sit+point_out",
+   "dir": 1,
+   "look": [
+    30,
+    4.4,
+    0
+   ],
+   "look_full": true
+  },
+  {
+   "who": "wide",
+   "at": 409,
+   "pos": [
+    -3,
+    4.4,
+    0.71
+   ],
+   "move_s": 2.2666666666666666,
+   "linear": true
+  },
+  {
+   "who": "wide",
+   "at": 499,
+   "pos": [
+    2.3,
+    0.2,
+    0.42
+   ],
+   "move_s": 0.03333333333333333,
+   "pose": "sit",
+   "face": "standard",
+   "look": null,
+   "look_full": false
+  },
+  {
+   "who": "wide",
+   "at": [
+    "shows",
+    1
+   ],
+   "look": "inspector"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "signalman",
+    2
+   ],
+   "pose": "sit+hands_hips"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "smiles",
+    1
+   ],
+   "face": "k:smirk",
+   "pose": "sit"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "send",
+    1
+   ],
+   "pose": "sit+finger_up",
+   "say": [
+    153,
+    154
+   ]
+  },
+  {
+   "who": "wide",
+   "at": [
+    "so",
+    5
+   ],
+   "pose": "sit",
+   "face": "standard",
+   "look": null
+  },
+  {
+   "who": "wide",
+   "at": [
+    "knock",
+    1,
+    -3
+   ],
+   "pose": "sit+knock",
+   "dir": -1,
+   "face": "k:smirk"
+  },
+  {
+   "who": "wide",
+   "at": [
+    "jack",
+    6
+   ],
+   "pose": "sit",
+   "face": "standard"
+  },
+  {
+   "who": "wide",
+   "at": 1963,
+   "visible": false
+  },
+  {
+   "who": "wide",
+   "at": 1965,
+   "pose": "sit+hold_up",
+   "prop": "letter",
+   "hand": "R",
+   "face": "k:happy"
+  },
+  {
+   "who": "wide",
+   "at": 2104,
+   "visible": true
+  },
+  {
+   "who": "wide",
+   "at": [
+    "job",
+    1
+   ],
+   "pose": "sit",
+   "prop": null,
+   "hand": null,
+   "face": "standard"
+  },
+  {
+   "who": "inspector",
+   "at": 920,
+   "enter": true,
+   "pos": [
+    4.8,
+    -0.6,
+    0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "k:annoyed"
+  },
+  {
+   "who": "inspector",
+   "at": 921,
+   "pos": [
+    0.4,
+    0.35,
+    0
+   ],
+   "walk": true,
+   "move_s": 1.5333333333333334
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "shows",
+    1,
+    4
+   ],
+   "pose": "hands_hips"
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "looks",
+    2
+   ],
+   "pose": "bend_down",
+   "look": "jack",
+   "face": "k:skeptical"
+  },
+  {
+   "who": "inspector",
+   "at": 1040,
+   "pos": [
+    1.3,
+    0.1,
+    0
+   ],
+   "walk": true,
+   "move_s": 0.4,
+   "pose": "hands_hips",
+   "look": "wide"
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "you've",
+    1,
+    -5
+   ],
+   "pose": "lean_in",
+   "say": [
+    140,
+    146
+   ]
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "trains",
+    1,
+    10
+   ],
+   "face": "laugh",
+   "punch": true,
+   "punch_s": 0.5
+  },
+  {
+   "who": "inspector",
+   "at": 1164,
+   "pose": "stand",
+   "face": "k:smug"
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "inspector",
+    2
+   ],
+   "pose": "finger_up",
+   "look": null
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "mixes",
+    1
+   ],
+   "pose": "hands_hips",
+   "face": "k:evil"
+  },
+  {
+   "who": "inspector",
+   "at": 1405,
+   "pos": [
+    6.5,
+    -0.9,
+    0
+   ],
+   "walk": true,
+   "move_s": 1.6666666666666667,
+   "pose": "stand"
+  },
+  {
+   "who": "inspector",
+   "at": 1459,
+   "visible": false
+  },
+  {
+   "who": "inspector",
+   "at": 1548,
+   "pos": [
+    13.2,
+    0.3,
+    0
+   ],
+   "move_s": 0.03333333333333333,
+   "pose": "hold_watch",
+   "prop": "notebook",
+   "hand": "L",
+   "face": "standard"
+  },
+  {
+   "who": "inspector",
+   "at": 1554,
+   "visible": true
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "checking",
+    1
+   ],
+   "pose": "press_watch",
+   "face": "k:nervous"
+  },
+  {
+   "who": "inspector",
+   "at": 1776,
+   "visible": false
+  },
+  {
+   "who": "inspector",
+   "at": 1960,
+   "pos": [
+    -0.75,
+    0.55,
+    0
+   ],
+   "move_s": 0.03333333333333333,
+   "pose": "stand",
+   "prop": null,
+   "hand": null,
+   "face": "k:sad"
+  },
+  {
+   "who": "inspector",
+   "at": 1963,
+   "visible": true
+  },
+  {
+   "who": "inspector",
+   "at": [
+    "writes",
+    2,
+    -4
+   ],
+   "pose": "write",
+   "dir": 1
+  },
+  {
+   "who": "inspector",
+   "at": 2104,
+   "visible": false
+  },
+  {
+   "who": "lady",
+   "at": 736,
+   "enter": true,
+   "pos": [
+    -0.6000000000000005,
+    4.0,
+    1.15
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "stand",
+   "face": "standard"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "sees",
+    1
+   ],
+   "face": "omg",
+   "pose": "hand_mouth"
+  },
+  {
+   "who": "lady",
+   "at": [
+    "screams",
+    1
+   ],
+   "face": "scream",
+   "pose": "flinch",
+   "punch": true,
+   "punch_s": 0.6
+  },
+  {
+   "who": "lady",
+   "at": [
+    "writes",
+    1
+   ],
+   "face": "offended",
+   "pose": "write"
+  },
+  {
+   "who": "lady",
+   "at": 968,
+   "visible": false
+  },
+  {
+   "who": "driver",
+   "at": 597,
+   "enter": true,
+   "pos": [
+    0.0,
+    4.0,
+    1.0
+   ],
+   "view": "front",
+   "dir": 1,
+   "pose": "reach_up",
+   "face": "standard"
+  },
+  {
+   "who": "driver",
+   "at": [
+    "jack",
+    4
+   ],
+   "pose": "stand"
+  },
+  {
+   "who": "driver",
+   "at": [
+    "driver",
+    1,
+    10
+   ],
+   "pose": "hold_up",
+   "prop": "key",
+   "hand": "R",
+   "face": "k:surprised"
+  },
+  {
+   "who": "driver",
+   "at": 710,
+   "visible": false
+  },
+  {
+   "who": "driver",
+   "at": 1687,
+   "pos": [
+    -16,
+    4.0,
+    1.0
+   ],
+   "move_s": 0.03333333333333333,
+   "face": "standard",
+   "pose": "reach_up",
+   "prop": null,
+   "hand": null
+  },
+  {
+   "who": "driver",
+   "at": 1740,
+   "visible": true
+  },
+  {
+   "who": "driver",
+   "at": [
+    "times",
+    1
+   ],
+   "face": "k:happy"
+  },
+  {
+   "who": "driver",
+   "at": 1963,
+   "visible": false
+  }
+ ],
+ "sentences": [
+  {
+   "text": "A signalman ran a busy railway junction for nine years, and he never said a single word.",
+   "words": [
+    0,
+    16
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "junction",
+     "show": "levers"
+    }
+   ]
+  },
+  {
+   "text": "His owner lost both his legs under a train, so he can't reach his own levers anymore.",
+   "words": [
+    17,
+    33
+   ],
+   "subject": "wide",
+   "nouns": [
+    {
+     "word": "owner",
+     "show": "wide"
+    },
+    {
+     "word": "levers",
+     "show": "levers"
+    }
+   ]
+  },
+  {
+   "text": "So he buys a baboon at the market, and he calls him Jack.",
+   "words": [
+    34,
+    46
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "baboon",
+     "show": "jack"
+    },
+    {
+     "word": "jack",
+     "show": "jack"
+    }
+   ]
+  },
+  {
+   "text": "Every morning Jack pushes him to work on a little trolley along the rails,",
+   "words": [
+    47,
+    60
+   ],
+   "subject": "wide",
+   "show": [
+    "jack"
+   ],
+   "nouns": [
+    {
+     "word": "trolley",
+     "show": "trolley"
+    },
+    {
+     "word": "rails",
+     "show": "rails"
+    }
+   ]
+  },
+  {
+   "text": "and by the end of the month, Jack is the one pulling the levers.",
+   "words": [
+    61,
+    74
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "levers",
+     "show": "levers",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "text": "A train toots its whistle, and Jack grabs the right key and hands it up to the driver.",
+   "words": [
+    75,
+    92
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "train",
+     "show": "train",
+     "n": 2
+    },
+    {
+     "word": "key",
+     "show": "key"
+    },
+    {
+     "word": "driver",
+     "show": "driver"
+    }
+   ]
+  },
+  {
+   "text": "Then one day a lady looks out of her train window and sees a baboon running the railway,",
+   "words": [
+    93,
+    110
+   ],
+   "subject": "lady",
+   "nouns": [
+    {
+     "word": "lady",
+     "show": "lady"
+    },
+    {
+     "word": "window",
+     "show": "window"
+    },
+    {
+     "word": "baboon",
+     "show": "jack",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "text": "and she screams so loud that the whole carriage writes to the railway boss.",
+   "words": [
+    111,
+    124
+   ],
+   "subject": "lady",
+   "nouns": [
+    {
+     "word": "carriage",
+     "show": "carriage"
+    }
+   ]
+  },
+  {
+   "text": "So an inspector shows up, looks at the baboon, looks at the signalman, and goes,",
+   "words": [
+    125,
+    139
+   ],
+   "subject": "inspector",
+   "nouns": [
+    {
+     "word": "inspector",
+     "show": "inspector"
+    },
+    {
+     "word": "baboon",
+     "show": "jack",
+     "n": 3
+    },
+    {
+     "word": "signalman",
+     "show": "wide",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "text": "\"You've got a monkey running my trains?\"",
+   "words": [
+    140,
+    146
+   ],
+   "subject": "inspector"
+  },
+  {
+   "text": "The signalman just smiles and says, \"Send one.\"",
+   "words": [
+    147,
+    154
+   ],
+   "subject": "wide",
+   "nouns": [
+    {
+     "word": "signalman",
+     "show": "wide",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "text": "So the inspector sends train after train, and he even mixes up the whistles to trick him.",
+   "words": [
+    155,
+    171
+   ],
+   "subject": "inspector",
+   "nouns": [
+    {
+     "word": "inspector",
+     "show": "inspector",
+     "n": 2
+    },
+    {
+     "word": "train",
+     "show": "train",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "text": "Two toots, Jack throws the lever, four toots, the right key, he doesn't even look up,",
+   "words": [
+    172,
+    187
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "lever",
+     "show": "lever"
+    },
+    {
+     "word": "key",
+     "show": "key",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "text": "and by the last train the inspector is the one checking his notes.",
+   "words": [
+    188,
+    200
+   ],
+   "subject": "inspector",
+   "nouns": [
+    {
+     "word": "notes",
+     "show": "notebook"
+    }
+   ]
+  },
+  {
+   "text": "You see, every driver whistled a different number of times for every track,",
+   "words": [
+    201,
+    213
+   ],
+   "subject": "train",
+   "nouns": [
+    {
+     "word": "driver",
+     "show": "train",
+     "n": 2
+    },
+    {
+     "word": "track",
+     "show": "tracks"
+    }
+   ]
+  },
+  {
+   "text": "kind of like how you know your mom's knock from the mailman's,",
+   "words": [
+    214,
+    225
+   ],
+   "subject": "wide",
+   "nouns": [
+    {
+     "word": "knock",
+     "show": "hut"
+    }
+   ]
+  },
+  {
+   "text": "and Jack had learned every single one just by listening.",
+   "words": [
+    226,
+    235
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "jack",
+     "show": "jack",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "text": "So the inspector goes back to his office and writes the strangest letter the railway ever sent.",
+   "words": [
+    236,
+    252
+   ],
+   "subject": "inspector",
+   "nouns": [
+    {
+     "word": "inspector",
+     "show": "inspector",
+     "n": 4
+    },
+    {
+     "word": "letter",
+     "show": "letter"
+    }
+   ]
+  },
+  {
+   "text": "Jack is hired, twenty cents a day and half a bottle of beer every week,",
+   "words": [
+    253,
+    267
+   ],
+   "subject": "jack",
+   "nouns": [
+    {
+     "word": "cents",
+     "show": "coin"
+    },
+    {
+     "word": "beer",
+     "show": "bottle"
+    }
+   ]
+  },
+  {
+   "text": "and in nine years on the job, he never made a single mistake.",
+   "words": [
+    268,
+    280
+   ],
+   "subject": "jack"
+  }
+ ],
+ "fx": [
+  {
+   "at": 36,
+   "kind": "lever_clank",
+   "on": "lever5"
+  },
+  {
+   "at": [
+    "baboon",
+    1
+   ],
+   "kind": "coin_glint",
+   "pos": [
+    1.81,
+    0.2,
+    0.91
+   ]
+  },
+  {
+   "at": [
+    "trolley",
+    1
+   ],
+   "kind": "wheel_sparks",
+   "on": "trolley"
+  },
+  {
+   "at": [
+    "pulling",
+    1,
+    10
+   ],
+   "kind": "lever_clank",
+   "on": "lever3"
+  },
+  {
+   "at": [
+    "baboon",
+    2,
+    12
+   ],
+   "kind": "lever_clank",
+   "on": "lever4"
+  },
+  {
+   "at": [
+    "toots",
+    1
+   ],
+   "kind": "whistle_steam",
+   "on": "chimney",
+   "s": 1.0
+  },
+  {
+   "at": [
+    "key",
+    1
+   ],
+   "kind": "glint",
+   "on": "keys"
+  },
+  {
+   "at": [
+    "screams",
+    1
+   ],
+   "kind": "sound",
+   "on": "window",
+   "s": 0.9
+  },
+  {
+   "at": [
+    "writes",
+    1
+   ],
+   "kind": "paper_letters",
+   "on": "window"
+  },
+  {
+   "at": [
+    "toots",
+    2
+   ],
+   "kind": "whistle_steam_x2",
+   "on": "chimney",
+   "s": 1.3
+  },
+  {
+   "at": [
+    "throws",
+    1,
+    20
+   ],
+   "kind": "lever_clank",
+   "on": "lever3"
+  },
+  {
+   "at": [
+    "toots",
+    3
+   ],
+   "kind": "whistle_steam_x4",
+   "on": "chimney",
+   "s": 1.0
+  },
+  {
+   "at": [
+    "checking",
+    1,
+    8
+   ],
+   "kind": "ear_steam_x2",
+   "pos": [
+    13.2,
+    0.3,
+    1.78
+   ],
+   "s": 1.25
+  },
+  {
+   "at": [
+    "rails",
+    1
+   ],
+   "kind": "wheel_sparks",
+   "on": "trolley"
+  },
+  {
+   "at": [
+    "whistled",
+    1
+   ],
+   "kind": "whistle_puffs_counted",
+   "on": "chimney",
+   "s": 1.6
+  },
+  {
+   "at": [
+    "knock",
+    1,
+    -2
+   ],
+   "kind": "sound",
+   "on": "hut",
+   "s": 0.5
+  },
+  {
+   "at": [
+    "knock",
+    1,
+    5
+   ],
+   "kind": "sound",
+   "on": "hut",
+   "s": 0.5
+  },
+  {
+   "at": [
+    "knock",
+    1,
+    12
+   ],
+   "kind": "sound",
+   "on": "hut",
+   "s": 0.5
+  },
+  {
+   "at": [
+    "listening",
+    1,
+    -6
+   ],
+   "kind": "sound",
+   "on": "jack",
+   "s": 1.0
+  },
+  {
+   "at": [
+    "listening",
+    1,
+    8
+   ],
+   "kind": "sound",
+   "on": "jack",
+   "s": 1.0
+  },
+  {
+   "at": [
+    "letter",
+    1
+   ],
+   "kind": "stamp_dust_hit",
+   "on": "letter",
+   "size": 0.8
+  }
+ ],
+ "moods": [
+  {
+   "at": [
+    "junction",
+    1
+   ],
+   "look": "warm_up"
+  },
+  {
+   "at": [
+    "train",
+    1
+   ],
+   "look": "flash_red"
+  },
+  {
+   "at": [
+    "jack",
+    1
+   ],
+   "look": "gold_spot_hero"
+  },
+  {
+   "at": [
+    "morning",
+    1
+   ],
+   "look": "warm_morning"
+  },
+  {
+   "at": [
+    "toots",
+    1
+   ],
+   "look": "steam_white"
+  },
+  {
+   "at": [
+    "sees",
+    1
+   ],
+   "look": "cold_blue_window"
+  },
+  {
+   "at": [
+    "screams",
+    1
+   ],
+   "look": "flash_red"
+  },
+  {
+   "at": [
+    "inspector",
+    1
+   ],
+   "look": "dark_shadow_falls"
+  },
+  {
+   "at": [
+    "monkey",
+    1
+   ],
+   "look": "dark_spot_mocker"
+  },
+  {
+   "at": [
+    "send",
+    1
+   ],
+   "look": "warm_gold"
+  },
+  {
+   "at": [
+    "toots",
+    2
+   ],
+   "look": "steam_white"
+  },
+  {
+   "at": [
+    "toots",
+    3
+   ],
+   "look": "steam_white"
+  },
+  {
+   "at": [
+    "up",
+    4
+   ],
+   "look": "dark_train_shadow"
+  },
+  {
+   "at": [
+    "see",
+    1
+   ],
+   "look": "gold_warm_high_sun"
+  },
+  {
+   "at": [
+    "knock",
+    1
+   ],
+   "look": "warm_home"
+  },
+  {
+   "at": [
+    "listening",
+    1
+   ],
+   "look": "spot_hero"
+  },
+  {
+   "at": 1963,
+   "look": "steam_white"
+  },
+  {
+   "at": [
+    "letter",
+    1
+   ],
+   "look": "warm_lamp_up"
+  },
+  {
+   "at": [
+    "hired",
+    1
+   ],
+   "look": "gold_warm"
+  },
+  {
+   "at": [
+    "mistake",
+    1
+   ],
+   "look": "warm_up"
+  }
+ ],
+ "sound": [
+  {
+   "at": 36,
+   "name": "lever_clank"
+  },
+  {
+   "at": 40,
+   "name": "signal_arm_up"
+  },
+  {
+   "at": [
+    "train",
+    1
+   ],
+   "name": "train_pass_far"
+  },
+  {
+   "at": [
+    "baboon",
+    1
+   ],
+   "name": "coin_ping"
+  },
+  {
+   "at": [
+    "pushes",
+    1
+   ],
+   "name": "trolley_wheels_loop"
+  },
+  {
+   "at": [
+    "pulling",
+    1
+   ],
+   "name": "lever_clank"
+  },
+  {
+   "at": [
+    "levers",
+    2
+   ],
+   "name": "lever_clank"
+  },
+  {
+   "at": [
+    "toots",
+    1
+   ],
+   "name": "whistle_1"
+  },
+  {
+   "at": [
+    "train",
+    2
+   ],
+   "name": "train_arrive_brakes"
+  },
+  {
+   "at": [
+    "key",
+    1
+   ],
+   "name": "key_jingle"
+  },
+  {
+   "at": [
+    "lady",
+    1,
+    -10
+   ],
+   "name": "train_roll_stop"
+  },
+  {
+   "at": [
+    "screams",
+    1
+   ],
+   "name": "lady_scream"
+  },
+  {
+   "at": [
+    "writes",
+    1
+   ],
+   "name": "paper_flutter"
+  },
+  {
+   "at": [
+    "inspector",
+    1
+   ],
+   "name": "boots_on_gravel"
+  },
+  {
+   "at": [
+    "train",
+    4
+   ],
+   "name": "train_pass_fast"
+  },
+  {
+   "at": [
+    "toots",
+    2
+   ],
+   "name": "whistle_2"
+  },
+  {
+   "at": [
+    "lever",
+    1
+   ],
+   "name": "lever_clank"
+  },
+  {
+   "at": [
+    "toots",
+    3
+   ],
+   "name": "whistle_4"
+  },
+  {
+   "at": [
+    "key",
+    2
+   ],
+   "name": "key_jingle"
+  },
+  {
+   "at": [
+    "up",
+    4
+   ],
+   "name": "train_pass_fast_close"
+  },
+  {
+   "at": [
+    "notes",
+    1
+   ],
+   "name": "pages_flip"
+  },
+  {
+   "at": [
+    "whistled",
+    1
+   ],
+   "name": "whistle_2"
+  },
+  {
+   "at": [
+    "times",
+    1
+   ],
+   "name": "whistle_3"
+  },
+  {
+   "at": [
+    "knock",
+    1
+   ],
+   "name": "knock_3"
+  },
+  {
+   "at": [
+    "mailman's",
+    1
+   ],
+   "name": "knock_2"
+  },
+  {
+   "at": [
+    "listening",
+    1
+   ],
+   "name": "whistle_far_soft"
+  },
+  {
+   "at": 1963,
+   "name": "whistle_steam_whoosh"
+  },
+  {
+   "at": [
+    "letter",
+    1
+   ],
+   "name": "stamp_thump"
+  },
+  {
+   "at": [
+    "cents",
+    1
+   ],
+   "name": "coins_drop"
+  },
+  {
+   "at": [
+    "beer",
+    1
+   ],
+   "name": "bottle_clink"
+  },
+  {
+   "at": [
+    "single",
+    3
+   ],
+   "name": "lever_creak_ready"
+  }
+ ]
+}

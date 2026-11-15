@@ -1,0 +1,8 @@
+{
+  "name": "cartoon-3d-short",
+  "private": true,
+  "description": "Film kit dependency for the cartoon-3d-short skill",
+  "dependencies": {
+    "playwright": "^1.49.1"
+  }
+}
