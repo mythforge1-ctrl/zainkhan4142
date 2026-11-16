@@ -43,7 +43,7 @@ props = {
  "quarter": {"held_by": "showman"},
  "clipboard": {"held_by": "sci1"},
  "block": {"pos": [-1.0, 0.7, 0], "h": 0.5, "kind": "chopping block with an axe mark (set)"},
- "barrel": {"pos": [1.7, -0.2, 0], "h": 0.85, "kind": "feed barrel Mike stands on, so his head clears the caption band (set)"},
+ "barrel": {"pos": [1.2, -0.2, 0], "h": 0.85, "kind": "feed barrel Mike stands on, so his head clears the caption band (set)"},
  "fence": {"pos": [0, 1.9, 0], "h": 1.1, "kind": "rail fence along y=1.9 (set)"},
  "sign": {"pos": [7, 3, 2.2], "h": 1.2, "kind": "sideshow sign 'LIVE HEADLESS CHICKEN' (set)"},
  "barn": {"pos": [-6, 3, 2.2], "h": 5, "kind": "red barn with a windmill behind it (set)"},
@@ -76,7 +76,7 @@ def R(sub, P, fr, dx=0.0, dy=0.0, dz=0.0, **kw):
          "lens": 24, "subject": sub, "framing": fr}
     s.update(kw); return s
 
-F0, M0, N0 = (0.0, 0.0), (1.7, -0.2, 0.85), (2.1, 1.7)
+F0, M0, N0 = (0.0, 0.0), (1.2, -0.2, 0.85), (2.1, 1.7)
 def mk(lst):
     def f(at, s, **kw): s = dict(s); s["at"] = at; s.update(kw); lst.append(s)
     return f
@@ -123,7 +123,7 @@ acts = []
 def act(who, at, **kw): acts.append(dict(who=who, at=at, **kw))
 # yard
 act("farmer", 0, pos=[0, 0, 0], view="front", dir=1, pose="hold_watch", face="strain", prop="eyedropper", hand="R")
-act("mike", 0, pos=[1.7, -0.2, 0.85], view="34", dir=-1, pose="stand", face="standard")
+act("mike", 0, pos=[1.2, -0.2, 0.85], view="34", dir=-1, pose="stand", face="standard")
 act("neighbour", 0, pos=[2.1, 1.7, 0], view="front", dir=-1, pose="stand", face="smug")
 act("farmer", A(2, "yard"), face="standard", pose="stand")
 act("farmer", A(3, "swings"), pose="point_up", face="evil", prop="axe", hand="R")
@@ -157,7 +157,7 @@ act("lady", A(13, "heartbeat"), face="judging", pose="stand")
 act("lady", A(14, "legs"), pos=[0.4, 0, 0], pose="stand", face="cool")
 act("lady", A(14, "thinking"), pos=[0.4, 0, 0], face="starstruck", pose="finger_up")
 # party
-act("mike", A(15, "so", -5), pos=[1.7, -0.2, 0.85], view="34", dir=-1, pose="stand", face="standard")
+act("mike", A(15, "so", -5), pos=[1.2, -0.2, 0.85], view="34", dir=-1, pose="stand", face="standard")
 act("farmer", A(15, "so", -5), pos=[0, 0, 0], view="front", dir=1, pose="stand", face="proud")
 act("neighbour", A(15, "so", -5), pos=[2.1, 1.7, 0], view="front", dir=-1, pose="clap", face="happyCry")
 act("farmer", A(16, "feeds"), face="delight", pose="hold_watch", prop="eyedropper", hand="R")

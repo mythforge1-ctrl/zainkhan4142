@@ -1,7 +1,7 @@
 // Episode cast: Mike the headless rooster (mike-chicken). A new spec on the LOCKED rig, same style rules.
 // He has NO head: a golden feather ruff covers the whole head circle and a flat cartoon neck end pokes out of the top (no blood, a clean pale cut).
 // So his acting is body and wings (and the rig's blink/mouth never show). Legs are the rig's ink sticks (chicken legs), wings and tail are shapes.
-import { INK, P, L, f1, fillPts, circ, cloud } from '../../../../templates/vector2d_characters/code/castkit.mjs';
+import { INK, P, L, f1, fillPts, circ, cloud } from '../castkit.mjs';
 export const TITLE = 'Mike the headless rooster (look 1, 2026-11-15)';
 const RUST = '#b5532a', RUSTD = '#7a2f17', GOLD1 = '#e08a2b', GOLD2 = '#f2b84a', GREEN = '#2f6b4f', NECK = '#f1d2bd', NECKD = '#d98f86';
 const flip = (cx, on, parts) => on ? [`<g transform="translate(${2 * cx},0) scale(-1,1)">${parts.join('')}</g>`] : parts;
